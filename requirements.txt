@@ -1,0 +1,38 @@
+
+# Core scientific libraries
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+# For GPU (if available, PyTorch will handle CUDA automatically)
+# If CUDA specific is needed, user can install torch with +cu121 or similar
+
+# Model management and experiments
+tensorboard
+optuna
+
+# Data handling
+h5py
+joblib
+
+# Dimensionality reduction and clustering visualization
+umap-learn
+
+# Jupyter support
+jupyter
+notebook
