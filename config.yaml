@@ -1,0 +1,105 @@
+# =============================
+# Global configuration for pipeline
+# =============================
+
+data:
+  path: 'D:/Furnace-data/Final_Modified.xlsx'   # <- external drive path
+  sheet_name: 'Sheet1'
+  index_col: null
+# -----------------------------
+# Regression targets
+# -----------------------------
+targets:
+  - ThermalEffColdStart          # ET (cold)
+  - ThermalEffHotStart           # ET (hot)
+  - SpecificFuelConsumptionSimmer   # CS cold    # CS (cold)  ← exact header from your sheet
+  - FirepowerColdStart           # PF (cold)
+  - FirepowerHotStart            # PF (hot)
+  - BurnRateColdStart            # VC (cold)
+  - BurnRateHotStart             # VC (hot)
+
+
+# -----------------------------
+# Preprocessing options
+# -----------------------------
+preprocess:
+  drop_na_threshold_col: 0.6       # drop columns with >40% missing
+  drop_na_threshold_row: 0.6       # drop rows with >40% missing
+  impute_strategy: median          # mean | median | most_frequent
+  scale: minmax                  # standard | minmax
+  remove_near_constant: true
+  variance_threshold: 0.0
+
+# -----------------------------
+# Dimensionality reduction
+# -----------------------------
+dim_reduce:
+  method: pca
+  n_components: 0.95      # keep 95% variance (often 10–40 comps)
+clustering:
+  algorithm: gmm          # try gmm or hdbscan
+  gmm_k_range: [2, 8]     # search K using BIC
+  covariance_type: full
+  kmeans_k: 5             # (fallback if you switch back to kmeans)
+  dbscan:
+    eps: 0.6
+    min_samples: 20
+
+
+# -----------------------------
+# Clustering
+# -----------------------------
+clustering:
+  algorithm: gmm        # or: kmeans / dbscan
+  gmm_k_range: [2, 8]
+  covariance_type: full
+
+
+  # ---- DBSCAN options ----
+  dbscan:
+    eps: 0.5
+    min_samples: 10
+    search:
+      enabled: true
+      eps_list: [0.3, 0.5, 0.7, 1.0]
+      min_samples_list: [5, 10, 20]
+
+  # ---- GMM options ----
+  gmm:
+    components: 5
+    search:
+      enabled: true
+      k_min: 2
+      k_max: 10
+
+  # Metric used to pick best algorithm if auto mode
+  selection_metric: silhouette     # silhouette | calinski_harabasz | davies_bouldin
+
+# -----------------------------
+# Regression
+# -----------------------------
+regression:
+  enabled: true
+  model: mlp           # lightgbm | mlp
+  test_size: 0.3
+  random_state: 42
+  metrics: [r2, mae, rmse]
+  mlp:
+    hidden: [256, 128]
+    dropout: 0.2
+    lr: 1e-3
+    epochs: 400
+    batch_size: 64
+    patience: 40
+
+
+
+
+# -----------------------------
+# Paths  (write to the external drive)
+# -----------------------------
+paths:
+  outputs: 'D:/Furnace-data/outputs'
+  figures: 'D:/Furnace-data/outputs/figures'
+  models:  'D:/Furnace-data/outputs/models'
+  reports: 'D:/Furnace-data/outputs/reports'
