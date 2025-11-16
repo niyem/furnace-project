@@ -1,38 +1,31 @@
-
-# Core scientific libraries
-numpy
-pandas
-scipy
+# Core Scientific Computing
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
 
 # Visualization
-matplotlib
-seaborn
+matplotlib>=3.4.0
+seaborn>=0.11.0
 
-# Machine Learning
-scikit-learn
-xgboost
-lightgbm
-catboost
+# Machine Learning - Core
+scikit-learn>=1.0.0
 
-# Deep Learning
-torch
-torchvision
-torchaudio
+# Machine Learning - Gradient Boosting
+xgboost>=1.5.0
+lightgbm>=3.3.0
 
-# For GPU (if available, PyTorch will handle CUDA automatically)
-# If CUDA specific is needed, user can install torch with +cu121 or similar
+# Dimensionality Reduction and Visualization
+umap-learn>=0.5.0
 
-# Model management and experiments
-tensorboard
-optuna
+# Configuration and Data Handling
+pyyaml>=5.4.0
+openpyxl>=3.0.0  # For Excel file support
 
-# Data handling
-h5py
-joblib
+# Optional: Deep Learning (for autoencoder-based dim reduction)
+# torch>=1.10.0
+# torchvision>=0.11.0
 
-# Dimensionality reduction and clustering visualization
-umap-learn
-
-# Jupyter support
-jupyter
-notebook
+# Development and Testing (optional)
+# pytest>=6.2.0
+# jupyter>=1.0.0
+# notebook>=6.4.0
