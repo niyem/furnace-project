@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+# Local raw data — do NOT track
+Raw_data/
 
 # Distribution / packaging
 .Python
