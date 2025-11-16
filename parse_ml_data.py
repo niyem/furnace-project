@@ -1,7 +1,8 @@
 """
-Parse sample_data.xlsx and create ML-ready dataset for efficiency prediction.
+Parse all .xlsx files in Raw_data folder and create ML-ready dataset for efficiency prediction.
 
-This script extracts raw measurements from Test-1 through Test-4 sheets
+This script automatically finds all Excel files in the Raw_data directory,
+extracts raw measurements from Test-1 through Test-4 sheets from each file,
 and produces a single CSV file with one row per test, suitable for training
 machine learning models to predict cooking stove thermal efficiency.
 """
@@ -10,6 +11,8 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from typing import Dict, List, Tuple, Any
+import glob
+import os
 
 
 def load_sheet(file_path: str, sheet_name: str) -> pd.DataFrame:
@@ -382,46 +385,93 @@ def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def build_ml_dataset(input_path: str, output_path: str) -> pd.DataFrame:
+def process_single_file(file_path: str) -> List[pd.DataFrame]:
     """
-    Main function to build ML-ready dataset from sample_data.xlsx.
-
-    Process:
-    1. Load each of the four test sheets (Test-1 through Test-4)
-    2. Extract raw measurements and efficiency targets from each
-    3. Combine into a single DataFrame (4 rows, one per test)
-    4. Filter columns to remove metadata and irrelevant features
-    5. Handle missing values
-    6. Save to CSV
+    Process a single Excel file and extract data from all test sheets.
 
     Args:
-        input_path: Path to sample_data.xlsx
+        file_path: Path to an Excel file
+
+    Returns:
+        List of DataFrames, one per test sheet
+    """
+    test_sheets = ['Test-1', 'Test-2', 'Test-3', 'Test-4']
+    file_tests = []
+    file_name = os.path.basename(file_path)
+
+    print(f"\nProcessing file: {file_name}")
+    print("-" * 60)
+
+    for sheet_name in test_sheets:
+        try:
+            # Load the sheet
+            df_raw = load_sheet(file_path, sheet_name)
+
+            # Clean and extract data
+            # Create a unique test_id combining file name and sheet name
+            test_id = f"{file_name}_{sheet_name}"
+            df_clean = clean_sheet(df_raw, test_id)
+
+            print(f"  {sheet_name}: Extracted {len(df_clean.columns)} features")
+            file_tests.append(df_clean)
+        except Exception as e:
+            print(f"  {sheet_name}: Error - {str(e)}")
+            # Skip this sheet if there's an error
+            continue
+
+    return file_tests
+
+
+def build_ml_dataset(input_folder: str, output_path: str) -> pd.DataFrame:
+    """
+    Main function to build ML-ready dataset from all .xlsx files in a folder.
+
+    Process:
+    1. Find all .xlsx files in the input folder
+    2. For each file, load Test-1 through Test-4 sheets
+    3. Extract raw measurements and efficiency targets from each
+    4. Combine into a single DataFrame (one row per test)
+    5. Filter columns to remove metadata and irrelevant features
+    6. Handle missing values
+    7. Save to CSV
+
+    Args:
+        input_folder: Path to folder containing .xlsx files
         output_path: Path for output CSV file
 
     Returns:
         The final ML-ready DataFrame
     """
-    print(f"Building ML dataset from: {input_path}")
+    print(f"Building ML dataset from folder: {input_folder}")
     print("=" * 80)
 
-    # Load and process each test sheet
-    test_sheets = ['Test-1', 'Test-2', 'Test-3', 'Test-4']
+    # Find all .xlsx files in the input folder
+    xlsx_pattern = os.path.join(input_folder, "*.xlsx")
+    xlsx_files = glob.glob(xlsx_pattern)
+
+    if not xlsx_files:
+        print(f"\nWARNING: No .xlsx files found in {input_folder}")
+        print("Please ensure the folder exists and contains Excel files.")
+        return pd.DataFrame()
+
+    print(f"\nFound {len(xlsx_files)} Excel file(s) to process:")
+    for i, file_path in enumerate(xlsx_files, 1):
+        print(f"  {i}. {os.path.basename(file_path)}")
+
+    # Process all files
     all_tests = []
 
-    for sheet_name in test_sheets:
-        print(f"\nProcessing {sheet_name}...")
+    for file_path in xlsx_files:
+        file_tests = process_single_file(file_path)
+        all_tests.extend(file_tests)
 
-        # Load the sheet
-        df_raw = load_sheet(input_path, sheet_name)
-
-        # Clean and extract data
-        df_clean = clean_sheet(df_raw, sheet_name)
-
-        print(f"  Extracted {len(df_clean.columns)} features")
-        all_tests.append(df_clean)
+    if not all_tests:
+        print("\nERROR: No test data was extracted from any files.")
+        return pd.DataFrame()
 
     # Combine all tests into one DataFrame
-    print(f"\nCombining {len(all_tests)} test sheets...")
+    print(f"\n" + "=" * 80)
+    print(f"Combining {len(all_tests)} test sheets from {len(xlsx_files)} file(s)...")
     df_combined = pd.concat(all_tests, axis=0, ignore_index=True)
     print(f"Combined dataset shape: {df_combined.shape}")
 
@@ -457,11 +507,11 @@ def build_ml_dataset(input_path: str, output_path: str) -> pd.DataFrame:
 
 if __name__ == "__main__":
     # Configuration
-    input_file = "sample_data.xlsx"
+    input_folder = "Raw_data"  # Folder containing .xlsx files
     output_file = "ml_ready_data.csv"
 
     # Build the dataset
-    df = build_ml_dataset(input_file, output_file)
+    df = build_ml_dataset(input_folder, output_file)
 
     print("\n" + "=" * 80)
     print("IMPORTANT NOTES:")
