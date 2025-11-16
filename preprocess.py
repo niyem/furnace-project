@@ -1,3 +1,18 @@
+"""
+Data preprocessing module for furnace efficiency ML pipeline.
+
+This module handles data cleaning, feature engineering, and transformation:
+- Missing value filtering (columns and rows)
+- Data type coercion (handling time formats, numeric conversion)
+- Feature imputation (median/mean/mode)
+- Feature scaling (StandardScaler or MinMaxScaler)
+- Near-constant feature removal
+- Duplicate column handling
+
+The preprocessing pipeline ensures clean, numeric feature matrices ready
+for dimensionality reduction and machine learning.
+"""
+
 import re
 import numpy as np
 import pandas as pd

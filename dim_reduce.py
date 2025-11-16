@@ -29,34 +29,35 @@ except Exception:
 # -------------------- Autoencoder ------------------------
 # =========================================================
 
-class _MLPEncoder(nn.Module):
-    def __init__(self, in_dim: int, hidden: list[int], latent: int, dropout: float = 0.0):
-        super().__init__()
-        layers = []
-        d = in_dim
-        for h in hidden:
-            layers += [nn.Linear(d, h), nn.ReLU(), nn.Dropout(dropout)]
-            d = h
-        layers += [nn.Linear(d, latent)]
-        self.net = nn.Sequential(*layers)
+if _HAS_TORCH:
+    class _MLPEncoder(nn.Module):
+        def __init__(self, in_dim: int, hidden: list[int], latent: int, dropout: float = 0.0):
+            super().__init__()
+            layers = []
+            d = in_dim
+            for h in hidden:
+                layers += [nn.Linear(d, h), nn.ReLU(), nn.Dropout(dropout)]
+                d = h
+            layers += [nn.Linear(d, latent)]
+            self.net = nn.Sequential(*layers)
 
-    def forward(self, x):
-        return self.net(x)
+        def forward(self, x):
+            return self.net(x)
 
 
-class _MLPDecoder(nn.Module):
-    def __init__(self, latent: int, hidden: list[int], out_dim: int, dropout: float = 0.0):
-        super().__init__()
-        layers = []
-        d = latent
-        for h in reversed(hidden):
-            layers += [nn.Linear(d, h), nn.ReLU(), nn.Dropout(dropout)]
-            d = h
-        layers += [nn.Linear(d, out_dim)]
-        self.net = nn.Sequential(*layers)
+    class _MLPDecoder(nn.Module):
+        def __init__(self, latent: int, hidden: list[int], out_dim: int, dropout: float = 0.0):
+            super().__init__()
+            layers = []
+            d = latent
+            for h in reversed(hidden):
+                layers += [nn.Linear(d, h), nn.ReLU(), nn.Dropout(dropout)]
+                d = h
+            layers += [nn.Linear(d, out_dim)]
+            self.net = nn.Sequential(*layers)
 
-    def forward(self, z):
-        return self.net(z)
+        def forward(self, z):
+            return self.net(z)
 
 
 def _fit_autoencoder(X_np: np.ndarray, cfg: dict):

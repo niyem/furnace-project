@@ -1,3 +1,22 @@
+"""
+Clustering module for furnace efficiency data analysis.
+
+This module provides unsupervised clustering algorithms with automatic
+hyperparameter search and comprehensive evaluation metrics:
+
+Algorithms:
+- K-Means clustering with automatic K selection
+- Gaussian Mixture Models (GMM) with BIC-based selection
+- DBSCAN for density-based clustering
+
+Evaluation Metrics:
+- Silhouette score (higher is better, range [-1, 1])
+- Calinski-Harabasz score (higher is better)
+- Davies-Bouldin score (lower is better)
+
+All clustering functions return cluster labels and evaluation metrics
+for downstream analysis and visualization.
+"""
 # cluster.py
 from __future__ import annotations
 import numpy as np

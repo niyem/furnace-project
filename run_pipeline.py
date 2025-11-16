@@ -1,205 +1,212 @@
-# run_pipeline.py
-import os
-import sys
+"""
+Main pipeline orchestrator for furnace efficiency ML project.
+
+This script coordinates the complete machine learning pipeline:
+1. Data loading (from ml_ready_data.csv or Excel)
+2. Preprocessing (cleaning, imputation, scaling)
+3. Dimensionality reduction (PCA)
+4. Clustering analysis (K-Means, GMM, or DBSCAN)
+5. Regression modeling (multiple models: Linear, RF, GB, XGBoost)
+6. Visualization generation (all plots saved to figures/)
+7. Results reporting (JSON summaries and metrics)
+
+Usage:
+    python run_pipeline.py --config config.yaml
+"""
+
 import argparse
-import subprocess
 from pathlib import Path
-import shutil
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt  # used for metric bar charts
+import pandas as pd
 
 from config import Config
 from data_loader import load_data
 from preprocess import basic_clean
 from dim_reduce import reduce_dimensions
 from cluster import cluster
-from regression import train_multi_target
+from regression import compute_average_efficiency, train_multi_target_multi_model, print_results_summary
 from utils import get_logger, save_json
+import visualizations as viz
 
 logger = get_logger()
 
 
-def _maybe_generate_cluster_figures(cfg_path: str, figures_dir: str) -> None:
-    """Try plot_visuals.make_plots, else run plot_visuals.py if present."""
-    try:
-        from plot_visuals import make_plots  # type: ignore
-        make_plots(cfg_path)
-        logger.info("Cluster figures generated via plot_visuals.make_plots().")
-        return
-    except Exception as e:
-        logger.debug(f"plot_visuals import path failed: {e}")
-
-    root = Path(__file__).parent
-    candidates = [root / "plot_visuals.py", root / "scripts" / "plot_visuals.py"]
-    for c in candidates:
-        if c.exists():
-            try:
-                subprocess.run(
-                    [sys.executable, str(c), "--config", cfg_path],
-                    check=True,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                    text=True,
-                )
-                logger.info(f"Cluster figures generated via script: {c}")
-                return
-            except subprocess.CalledProcessError as se:
-                logger.warning(f"plot_visuals.py ran but returned an error:\n{se.stderr}")
-
-    logger.info("Skipping cluster figure generation (plot_visuals not found).")
-
-
-def _write_metric_bars(reg_results: dict, figures_dir: str) -> None:
+def main(cfg_path: str = 'config.yaml') -> None:
     """
-    Create metrics_{metric}.png in figures_dir from reg_results:
-    { target: {metric: value, ...}, ... }
+    Run the complete ML pipeline.
+
+    Parameters
+    ----------
+    cfg_path : str
+        Path to the configuration YAML file.
     """
-    if not isinstance(reg_results, dict) or not reg_results:
-        return
-    Path(figures_dir).mkdir(parents=True, exist_ok=True)
+    logger.info("="*80)
+    logger.info("FURNACE EFFICIENCY ML PIPELINE")
+    logger.info("="*80)
 
-    # collect targets and metric names
-    targets = [t for t, v in reg_results.items() if isinstance(v, dict)]
-    if not targets:
-        return
-    metrics = set()
-    for t in targets:
-        for k, v in reg_results[t].items():
-            if isinstance(v, (int, float, np.floating)):
-                metrics.add(k)
-    metrics = sorted(metrics)
-    if not metrics:
-        return
-
-    for m in metrics:
-        vals = [reg_results[t].get(m, np.nan) for t in targets]
-        plt.figure(figsize=(9, 4))
-        plt.bar(range(len(targets)), vals)
-        plt.xticks(range(len(targets)), targets, rotation=30, ha="right")
-        plt.ylabel(m.upper())
-        plt.title(f"{m.upper()} by Target")
-        plt.tight_layout()
-        out = Path(figures_dir) / f"metrics_{m}.png"
-        plt.savefig(out, dpi=160)
-        plt.close()
-    logger.info(f"Wrote metric bar charts to {figures_dir}")
-
-
-def _harvest_report_images(reports_dir: str, figures_dir: str) -> int:
-    """
-    Recursively copy all images from reports_dir into figures_dir.
-    Handles .png/.jpg/.jpeg/.svg/.pdf and keeps basenames (no subfolders).
-    Returns count of files copied.
-    """
-    src = Path(reports_dir)
-    dst = Path(figures_dir)
-    dst.mkdir(parents=True, exist_ok=True)
-    exts = {".png", ".jpg", ".jpeg", ".svg", ".pdf"}
-
-    if not src.exists():
-        logger.info(f"Reports folder not found: {src}")
-        return 0
-
-    copied = 0
-    for p in src.rglob("*"):
-        if p.is_file() and p.suffix.lower() in exts:
-            try:
-                shutil.copy2(p, dst / p.name)
-                copied += 1
-            except Exception as e:
-                logger.warning(f"Could not copy {p} -> {dst}: {e}")
-    logger.info(f"Harvested {copied} figure(s) from {src} into {dst}.")
-    return copied
-
-
-def main(cfg_path: str) -> None:
+    # Load configuration
     cfg = Config(cfg_path)
+    logger.info(f"Configuration loaded from: {cfg_path}")
 
-    # Paths (already resolved to the data drive by Config)
-    outputs_dir = cfg["paths"]["outputs"]
-    figures_dir = cfg["paths"]["figures"]
-    models_dir  = cfg["paths"]["models"]
-    reports_dir = cfg["paths"]["reports"]
-    for d in (outputs_dir, figures_dir, models_dir, reports_dir):
-        os.makedirs(d, exist_ok=True)
+    # Get paths
+    data_path = cfg.get('data', 'path')
+    sheet_name = cfg.get('data', 'sheet_name', default='Sheet1')
+    index_col = cfg.get('data', 'index_col')
+    figures_dir = cfg.get('paths', 'figures', default='figures')
+    reports_dir = cfg.get('paths', 'reports', default='outputs/reports')
 
-    details_dir = os.path.join(reports_dir, "regression_details")
-    os.makedirs(details_dir, exist_ok=True)
+    # Ensure directories exist
+    Path(figures_dir).mkdir(parents=True, exist_ok=True)
+    Path(reports_dir).mkdir(parents=True, exist_ok=True)
 
-    # 1) Load
-    df = load_data(
-        cfg["data"]["path"],
-        cfg["data"].get("sheet_name", "Sheet1"),
-        cfg["data"].get("index_col"),
+    # ========================================================================
+    # STEP 1: Load Data
+    # ========================================================================
+    logger.info("\n" + "-"*80)
+    logger.info("STEP 1: Loading data")
+    logger.info("-"*80)
+
+    df = load_data(data_path, sheet_name, index_col)
+    logger.info(f"Data loaded: {df.shape[0]} rows, {df.shape[1]} columns")
+
+    # ========================================================================
+    # STEP 2: Preprocessing
+    # ========================================================================
+    logger.info("\n" + "-"*80)
+    logger.info("STEP 2: Preprocessing")
+    logger.info("-"*80)
+
+    targets_config = cfg.get('targets', default=[])
+    preprocess_config = cfg.get('preprocess', default={})
+
+    X, y = basic_clean(df, preprocess_config, targets_config)
+    logger.info(f"Preprocessing complete: X={X.shape}, y={y.shape if y is not None else None}")
+
+    # Compute average efficiency if we have the individual thermal efficiency columns
+    if y is not None:
+        y = compute_average_efficiency(y)
+        logger.info(f"Targets after computing average_efficiency: {y.columns.tolist()}")
+
+    # ========================================================================
+    # STEP 3: Dimensionality Reduction
+    # ========================================================================
+    logger.info("\n" + "-"*80)
+    logger.info("STEP 3: Dimensionality reduction")
+    logger.info("-"*80)
+
+    dim_reduce_config = cfg.get('dim_reduce', default={})
+    Z, dim_info = reduce_dimensions(X, dim_reduce_config)
+    logger.info(f"Dimensionality reduction complete: {X.shape[1]} → {Z.shape[1]} dimensions")
+
+    # Save PCA variance plot if using PCA
+    if dim_info.get('method') == 'pca':
+        from sklearn.decomposition import PCA
+        pca_model = PCA(n_components=dim_reduce_config.get('n_components', 0.95), random_state=42)
+        pca_model.fit(X.values)
+        viz.plot_pca_variance(pca_model, figures_dir=figures_dir)
+
+    # ========================================================================
+    # STEP 4: Clustering
+    # ========================================================================
+    logger.info("\n" + "-"*80)
+    logger.info("STEP 4: Clustering analysis")
+    logger.info("-"*80)
+
+    clustering_config = cfg.get('clustering', default={})
+    labels, cluster_model, cluster_metrics = cluster(Z, clustering_config)
+
+    n_clusters = len(np.unique(labels[labels >= 0]))
+    logger.info(f"Clustering complete: {n_clusters} clusters identified")
+    logger.info(f"Cluster metrics: {cluster_metrics}")
+
+    # Save clustering results
+    cluster_results = {
+        'n_clusters': n_clusters,
+        'algorithm': cluster_metrics.get('algorithm', 'unknown'),
+        'metrics': cluster_metrics,
+        'cluster_sizes': {int(k): int(v) for k, v in zip(*np.unique(labels, return_counts=True))}
+    }
+    save_json(cluster_results, Path(reports_dir) / 'cluster_summary.json')
+
+    # Generate clustering visualizations
+    logger.info("Generating clustering visualizations...")
+    viz.create_all_clustering_visualizations(
+        X.values, labels, cluster_metrics,
+        pca_model=pca_model if dim_info.get('method') == 'pca' else None,
+        config=cfg.cfg,
+        figures_dir=figures_dir
     )
-    targets = cfg.get("targets", default=[])
 
-    # 2) Preprocess
-    X, y = basic_clean(df, cfg["preprocess"], targets)
+    # ========================================================================
+    # STEP 5: Regression Modeling
+    # ========================================================================
+    logger.info("\n" + "-"*80)
+    logger.info("STEP 5: Regression modeling")
+    logger.info("-"*80)
 
-    # 3) Dimensionality reduction
-    Z, dim_info = reduce_dimensions(X, cfg["dim_reduce"])
+    regression_config = cfg.get('regression', default={})
 
-    # 4) Clustering
-    labels, clus_model, clus_summary = cluster(Z, cfg["clustering"])
+    if regression_config.get('enabled', True) and y is not None:
+        # Get model names
+        model_names = regression_config.get('models', ['linear', 'random_forest', 'gradient_boost', 'xgboost'])
+        test_size = regression_config.get('test_size', 0.2)
+        validation_size = regression_config.get('validation_size', 0.1)
+        random_state = regression_config.get('random_state', 42)
+        metrics = regression_config.get('metrics', ['r2', 'mae', 'mse', 'rmse'])
 
-    # Save clustering outputs for plotting scripts
-    emb_cols = [f"Z{i+1}" for i in range(Z.shape[1])]
-    out_df = pd.DataFrame(Z, columns=emb_cols, index=X.index)
-    out_df["cluster"] = labels
-    out_df.to_csv(os.path.join(reports_dir, "embedding_with_clusters.csv"), index=False)
+        # Filter out targets with too many missing values
+        y_valid = y.dropna(axis=1, thresh=int(0.5 * len(y)))  # Keep columns with at least 50% non-null
+        logger.info(f"Valid targets for regression: {y_valid.columns.tolist()}")
 
-    save_json(
-        {"dim_info": dim_info, "cluster_summary": clus_summary},
-        os.path.join(reports_dir, "cluster_summary.json"),
-    )
+        # Align features with valid targets
+        common_idx = X.index.intersection(y_valid.index)
+        X_reg = X.loc[common_idx]
+        y_reg = y_valid.loc[common_idx]
 
-    # 5) Regression
-    reg_cfg = cfg.get("regression", default={})
-    reg_results = {}
-    if reg_cfg.get("enabled", True) and (y is not None):
-        try:
-            y_valid = y.dropna(how="all")
-            common_idx = X.index.intersection(y_valid.index)
-            reg_results = train_multi_target(
-                X.loc[common_idx],
-                y.loc[common_idx],
-                model_name=reg_cfg.get("model", "lightgbm"),
-                test_size=reg_cfg.get("test_size", 0.2),
-                random_state=reg_cfg.get("random_state", 42),
-                metrics=reg_cfg.get("metrics", ["r2", "mae", "rmse"]),
-                save_details_dir=details_dir,
-                save_training_curves=reg_cfg.get("save_training_curves", True),
-                loss_metric=reg_cfg.get("loss_metric", "l2"),
-                early_stopping_rounds=reg_cfg.get("early_stopping_rounds", 100),
-                max_estimators=reg_cfg.get("max_estimators", 2000),
-            )
-        except Exception as e:
-            logger.error(f"Regression training failed: {e}")
-            reg_results = {"error": str(e)}
+        logger.info(f"Training {len(model_names)} models on {len(y_reg.columns)} targets...")
 
-    # 6) Save results
-    save_json(reg_results, os.path.join(reports_dir, "regression_results.json"))
-    logger.info(f"Regression results saved to: {os.path.join(reports_dir, 'regression_results.json')}")
+        # Train all models
+        regression_results = train_multi_target_multi_model(
+            X_reg, y_reg,
+            model_names=model_names,
+            test_size=test_size,
+            validation_size=validation_size,
+            random_state=random_state,
+            metrics=metrics,
+            figures_dir=figures_dir,
+            reports_dir=reports_dir
+        )
 
-    # 7) Write metric bar charts directly to figures
-    _write_metric_bars(reg_results, figures_dir)
+        # Print summary
+        print_results_summary(regression_results)
 
-    # 8) Recursively mirror every figure from reports → figures
-    _harvest_report_images(reports_dir, figures_dir)
+    else:
+        logger.info("Regression disabled or no target variables available.")
+        regression_results = {}
 
-    # 9) Generate cluster figures (if plot_visuals exists)
-    _maybe_generate_cluster_figures(cfg_path, figures_dir)
-
-    logger.info("Pipeline complete.")
-    logger.info(f"Data file: {cfg['data']['path']}")
-    logger.info(f"Reports : {reports_dir}")
-    logger.info(f"Figures : {figures_dir}")
+    # ========================================================================
+    # Pipeline Complete
+    # ========================================================================
+    logger.info("\n" + "="*80)
+    logger.info("PIPELINE COMPLETE")
+    logger.info("="*80)
+    logger.info(f"Outputs saved to:")
+    logger.info(f"  - Figures: {figures_dir}/")
+    logger.info(f"  - Reports: {reports_dir}/")
+    logger.info("="*80)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=str, default="config.yaml")
+    parser = argparse.ArgumentParser(
+        description="Run the furnace efficiency ML pipeline",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        '--config',
+        type=str,
+        default='config.yaml',
+        help='Path to configuration file (default: config.yaml)'
+    )
+
     args = parser.parse_args()
     main(args.config)
