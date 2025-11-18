@@ -1,0 +1,39 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output files (optional - uncomment if you don't want to commit generated content)
+# outputs/images/*.jpg
+# outputs/images/*.png
+# outputs/content/*.txt
+# outputs/content/*.json
+
+# Temporary files
+*.tmp
+temp_background.jpg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
