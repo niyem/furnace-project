@@ -1,0 +1,32 @@
+TOTAL_LINES=282
+LENGTH=10649
+--- PROBES ---
+--- MIN_TRAIN ---
+L76: MIN_TRAIN_STOVES = 30      # require at least this many training stoves
+L165:     if len(train) < MIN_TRAIN_STOVES or len(test) < MIN_TEST_STOVES:
+--- MIN_TEST ---
+L75: MIN_TEST_STOVES = 10       # require at least this many held-out stoves to score the cell
+L165:     if len(train) < MIN_TRAIN_STOVES or len(test) < MIN_TEST_STOVES:
+--- TARGETS ---
+L78: TARGETS = [
+L187:         for target in TARGETS:
+--- FEATURE_SETS ---
+--- hold_col ---
+L157: def evaluate_holdout(df: pd.DataFrame, target: str, hold_col: str, hold_val: str) -> dict | None:
+L158:     """Train RF on everything where df[hold_col] != hold_val, test on the rest."""
+L159:     sub = df.dropna(subset=[target, hold_col]).copy()
+L163:     train = sub[sub[hold_col] != hold_val]
+L164:     test = sub[sub[hold_col] == hold_val]
+L181: def run_probe(df: pd.DataFrame, probe_name: str, hold_col: str) -> pd.DataFrame:
+--- probe_kind ---
+--- N_SPLITS ---
+--- ^def  ---
+L96: def load_wide() -> pd.DataFrame:
+L106: def wbt_features_for(target: str, df: pd.DataFrame) -> list[str]:
+L125: def combined_features(target: str, df: pd.DataFrame) -> tuple[list[str], list[str]]:
+L135: def make_rf_pipeline(num_cols: list[str], cat_cols: list[str]) -> Pipeline:
+L157: def evaluate_holdout(df: pd.DataFrame, target: str, hold_col: str, hold_val: str) -> dict | None:
+L181: def run_probe(df: pd.DataFrame, probe_name: str, hold_col: str) -> pd.DataFrame:
+--- src_path ---
+L101:     df = df.dropna(subset=["src_path"]).copy()
+--- campaign ---

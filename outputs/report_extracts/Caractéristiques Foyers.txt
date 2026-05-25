@@ -1,0 +1,7 @@
+[TABLE-ROW] Caractéristiques (cm) | MAN1 | MAN2 | MAN3 | WM581 | WM2230 | WM6820 | 
+[TABLE-ROW] Hauteur | 23,6 | 23,7 | 23,8 | 23,6 | 23,7 | 23,6 | 
+[TABLE-ROW] Profondeur - Chambre de combustion | 7,5 | 7,6 | 7,5 | 7,3 | 7,4 | 7, 2 | 
+[TABLE-ROW] Diamètre extérieur | 29,3 | 29,4 | 29,2 | 29,9 | 29,8 | 29,7 | 
+[TABLE-ROW] Diamètre intérieur | 22,7 | 22,6 | 22,8 | 21,7 | 21,6 | 21,8 | 
+[TABLE-ROW] Diamètre - Trous des Grilles | 1,98 | 2,0 | 1,98 | 1,97 | 2,1 | 2,0 | 
+[TABLE-ROW] Entrée d'air | 11,9x6 | 11,6x6,2 | 11,4x6 | 10,2x5,9 | 10,1x5,6 | 10,1x6,1 | 

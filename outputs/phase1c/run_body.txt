@@ -1,0 +1,38 @@
+L245: def run() -> None:
+L246:     df = load_wide()
+L247: 
+L248:     all_rows: list[pd.DataFrame] = []
+L249: 
+L250:     # LOFO — leave-one-format-out
+L251:     df_lofo = df.dropna(subset=["format"]).copy()
+L252:     all_rows.append(run_probe(df_lofo, "LOFO", "format"))
+L253: 
+L254:     # LOMO — leave-one-material-out (only meaningful if >=2 materials)
+L255:     df_lomo = df.dropna(subset=["material"]).copy()
+L256:     if df_lomo["material"].nunique() >= 2:
+L257:         all_rows.append(run_probe(df_lomo, "LOMO", "material"))
+L258: 
+L259:     # LOBO — leave-one-brand-out
+L260:     df_lobo = df.dropna(subset=["brand"]).copy()
+L261:     all_rows.append(run_probe(df_lobo, "LOBO", "brand"))
+L262: 
+L263:     results = pd.concat(all_rows, ignore_index=True) if all_rows else pd.DataFrame()
+L264:     out_path = OUT_DIR / "ood_results.csv"
+L265:     results.to_csv(out_path, index=False)
+L266:     log.info("wrote %s (%d rows)", out_path, len(results))
+L267: 
+L268:     write_md(results, OUT_DIR / "ood_summary.md")
+L269:     log.info("wrote ood_summary.md")
+L270: 
+L271:     # Console snapshot per probe
+L272:     log.info("\n--- Probe summary (mean R² across holdouts, per target) ---")
+L273:     pivot = (
+L274:         results.groupby(["probe", "target"])["r2"].agg(["mean", "std", "count"])
+L275:         .reset_index()
+L276:         .rename(columns={"mean": "r2_mean", "std": "r2_std", "count": "n_cells"})
+L277:     )
+L278:     log.info("\n%s", pivot.to_string(index=False))
+L279: 
+L280: 
+L281: if __name__ == "__main__":
+L282:     run()

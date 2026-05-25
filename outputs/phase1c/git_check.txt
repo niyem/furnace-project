@@ -1,0 +1,83 @@
+drwxr-xr-x. 8 nbawana3 pace-dc187 4096 May 24 11:41 .git
+---REMOTES---
+origin	https://github.com/niyem/furnace-project.git (fetch)
+origin	https://github.com/niyem/furnace-project.git (push)
+---BRANCH---
+* main 12d992a [origin/main] Merge pull request #2 from niyem/claude/write-comprehensive-readme-Sy4bs
+---STATUS---
+ D outputs/efficiency_stats/FigA_Efficiency_Distributions.png
+ D outputs/efficiency_stats/FigB_Efficiency_Boxplots.png
+ D outputs/efficiency_stats/FigC_Efficiency_Violin.png
+ D outputs/efficiency_stats/FigD_Efficiency_Correlation.png
+ D outputs/efficiency_stats/efficiency_descriptive_stats.csv
+ D outputs/figures/Fig10_Learning_Curve.png
+ D outputs/figures/Fig11_Elbow.png
+ D outputs/figures/Fig12_PCA_Clusters.png
+ D outputs/figures/Fig13_Cluster_Efficiency.png
+ D outputs/figures/Fig14_Cluster_Firepower.png
+ D outputs/figures/Fig1_Target_Dist.png
+ D outputs/figures/Fig2_Correlation.png
+ D outputs/figures/Fig4_Actual_vs_Pred.png
+ D outputs/figures/Fig5_Residuals.png
+ D outputs/figures/Fig8_Phase_Comparison.png
+?? data/processed/wbt_long.csv
+?? data/processed/wbt_long_mvp.csv
+?? data/processed/wbt_report.txt
+?? data/processed/wbt_wide.csv
+?? data/raw/Tests_Foyers.zip
+?? data/raw/Tests_Foyers_unzipped/
+?? extract_reports.py
+?? extract_reports2.py
+?? fix_stove_dims.py
+?? outputs/_archive_old_approach/
+?? outputs/figures_pub/
+?? outputs/phase1/
+?? outputs/phase1c/
+?? outputs/phase1d/
+?? outputs/phase2/
+?? outputs/phase3/
+?? outputs/phase4/
+?? outputs/phase5/
+?? outputs/report_extracts/
+?? phase1_predictability.py
+?? phase1c_hyperparam_sensitivity.py
+?? phase1d_lightgbm.py
+?? phase2_feature_ablation.py
+?? phase3_ood_probes.py
+?? phase4_years_in_service.py
+?? phase4b_yis_permutation.py
+?? phase5_uncertainty.py
+?? prep_mvp.py
+?? preprocess_wbt.py
+?? regenerate_figures.py
+---UNTRACKED---
+?? data/processed/wbt_long.csv
+?? data/processed/wbt_long_mvp.csv
+?? data/processed/wbt_report.txt
+?? data/processed/wbt_wide.csv
+?? data/raw/Tests_Foyers.zip
+?? data/raw/Tests_Foyers_unzipped/
+?? extract_reports.py
+?? extract_reports2.py
+?? fix_stove_dims.py
+?? outputs/_archive_old_approach/
+?? outputs/figures_pub/
+?? outputs/phase1/
+?? outputs/phase1c/
+?? outputs/phase1d/
+?? outputs/phase2/
+?? outputs/phase3/
+?? outputs/phase4/
+?? outputs/phase5/
+?? outputs/report_extracts/
+?? phase1_predictability.py
+?? phase1c_hyperparam_sensitivity.py
+?? phase1d_lightgbm.py
+?? phase2_feature_ablation.py
+?? phase3_ood_probes.py
+?? phase4_years_in_service.py
+?? phase4b_yis_permutation.py
+?? phase5_uncertainty.py
+?? prep_mvp.py
+?? preprocess_wbt.py
+?? regenerate_figures.py

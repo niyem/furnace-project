@@ -1,0 +1,46 @@
+---GITIGNORE---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+# Local raw data — do NOT track
+Raw_data/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+---DATA_SIZES---
+111M	data/raw/Tests_Foyers.zip
+127M	data/raw/Tests_Foyers_unzipped
+14M	data/processed/
+3.3M	outputs/_archive_old_approach
+---OUTPUT_SIZES---
+76K	outputs/phase1
+77K	outputs/phase1c
+16K	outputs/phase1d
+56K	outputs/phase2
+56K	outputs/phase3
+296K	outputs/phase4
+1.4M	outputs/phase5
+2.2M	outputs/figures_pub
+108K	outputs/report_extracts

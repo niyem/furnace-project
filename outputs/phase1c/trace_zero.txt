@@ -1,0 +1,24 @@
+--- All rows for Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx: 48 ---
+source_kind: ['wbt_template']
+phases present: ['cold' 'hot' 'simmer']
+metrics present: ['tboil' 'br' 'eff' 'sfc' 'fp']
+--- Simmer-phase rows: 8 ---
+Simmer metrics present: {'eff': np.int64(4), 'sfc': np.int64(4)}
+--- eff ---
+[{'replicate': 'T1', 'value': 0.0, 'units': '%'}, {'replicate': 'T2', 'value': 0.0, 'units': '%'}, {'replicate': 'T3', 'value': 0.0, 'units': '%'}, {'replicate': 'avg', 'value': 0.0, 'units': '%'}]
+--- sfc ---
+[{'replicate': 'T1', 'value': -346.9055374592834, 'units': 'g/liter'}, {'replicate': 'T2', 'value': -351.7915309446254, 'units': 'g/liter'}, {'replicate': 'T3', 'value': -351.7915309446254, 'units': 'g/liter'}, {'replicate': 'avg', 'value': -350.16286644951134, 'units': 'g/liter'}]
+--- Efficiency-related metrics found: ['eff'] ---
+eff:
+  phase=cold rep=T1 val=0.1634022507273886 units=%
+  phase=cold rep=T2 val=0.1631766973122855 units=%
+  phase=cold rep=T3 val=0.1635367712344991 units=%
+  phase=cold rep=avg val=0.1633719064247244 units=%
+  phase=hot rep=T1 val=0.1741790794365114 units=%
+  phase=hot rep=T2 val=0.1689762772063714 units=%
+  phase=hot rep=T3 val=0.1673862105271924 units=%
+  phase=hot rep=avg val=0.1701805223900251 units=%
+  phase=simmer rep=T1 val=0.0 units=%
+  phase=simmer rep=T2 val=0.0 units=%
+  phase=simmer rep=T3 val=0.0 units=%
+  phase=simmer rep=avg val=0.0 units=%

@@ -1,0 +1,447 @@
+[PAGE 1]
+SSOOSSEETT
+SSOOSS EENNEERRGGIIEE TTOOGGOO
+R
+APPORT
+T ’ ’
+DE ESTS D EBULLITION DE L EAU
+3 ,
+SUR FOYERS À CHARBON DE BOIS À CŒUR
+“FARM COMMODITIES
+CÉRAMIQUE FABRIQUÉS PAR
+SARL U TOGO”
+Pour Sequoia Plantation Togo SAU
+Présenté par :
+SOS ENERGIE TOGO
+Février 2023
+
+[PAGE 2]
+TABLE DES MATIÈRES
+Abréviations et acronymes ............................................................................................................................ 2
+Introduction ................................................................................................................................................... 3
+I- Méthodologie et matériel des tests ............................................................................................................ 3
+I-1. Objectifs des tests…… …………………………………………………………………………………………..3
+I-2. Descriptif et déroulement des tests …………………………………………………………………………….3
+I-3. Matériel utilisé pour les tests …………………………………………………………………………………... 6
+I-4. Foyers testés……………………………………………………………………………………………………....7
+I-5. Conditions des tests..…………………………………………………………………………………………….9
+II- Résultats des tests ................................................................................................................................... 9
+II-1. Organisation pratique des tests …….…………………………………………………… …………………….9
+II-2. Résultats détaillés des tests ……………………………………………………………… ……………………9
+II-3. Récapitulatif des moyennes des principaux paramètres fonctionnels de chaque foyer ………………..11
+II-4. Synthèse des valeurs moyennes générales des paramètres fonctionnels des 3 foyers fabriqués par
+FARM COMMODITIES SARL U TOGO ……………………………………………………… ………………….12
+III- Analyse des résultats .............................................................................................................................13
+Conclusion ................................................................................................................................................... 14
+ANNEXE : Quelques images des tests ....................................................................................................... 15
+1
+
+[PAGE 3]
+Abréviations et acronymes
+CoV : Coefficient de variation
+CS : Consommation spécifique
+DS : Écart-type
+ET : Efficacité thermique
+Param. : Paramètre
+PF : Puissance de feu
+WBT : Test d'ébullition de l'eau
+VC : Vitesse de combustion
+TC: Temps de cuisson
+TDR : Turning-down ratio
+2
+
+[PAGE 4]
+Introduction
+Dans le cadre de la mise en œuvre de son projet Finance Carbone sur les foyers améliorés au Togo, Sequoia
+Plantation Togo SAU a requis les services de l'association SOS Energie Togo (SOSET) pour réaliser des
+tests sur les performances techniques de trois (03) foyers à cœur céramique, utilisant du charbon de bois,
+fabriqués par une société Togolaise dénommée « FARM COMMODITIES SARL U TOGO ».
+L'objectif principal de ces tests, caractérisés essentiellement par des tests d'ébullition de l'eau, est de
+déterminer l’efficacité thermique moyenne de cet échantillon de foyers.
+Les sections suivantes décrivent les différents aspects liés aux conditions et au déroulement des tests, les
+résultats obtenus et les conclusions qui en découlent.
+I. Méthodologie et matériel des tests
+I-1. Objectifs des tests
+Les tests de foyers de cuisson ont pour objectif d’évaluer leurs performances globales de fonctionnement.
+Ainsi, le protocole général de test des foyers comporte trois types de tests :
+ les Tests d’Ebullition de l’Eau (TEE ou WBT en anglais),
+ les Tests de Cuisine Contrôlée (TCC),
+ les Tests de Performance de Cuisine (TPC).
+Dans le cadre de la présente étude, seuls les tests d’ébullition de l’eau ont été retenus. Les TEE constituent
+des simulations scientifiques simples et courtes de la procédure normalement suivie au cours de la cuisson
+des repas. Ils servent à comparer les performances de différents foyers ou la performance d’un même foyer
+dans des situations opérationnelles différentes. Ils permettent de déterminer, entre autres :
+ Le temps moyen nécessaire pour amener une certaine quantité d’eau à ébullition (correspondant au
+temps minimum moyen nécessaire pour faire cuire un aliment) ;
+ La consommation spécifique moyenne en combustible de chaque foyer ;
+ Le rendement énergétique global de chaque foyer.
+I-2. Description et procédure des tests
+I-2-1. Description des tests
+Les tests ont été réalisés selon le protocole WBT 4.2.3 publié par l’Alliance mondiale pour les foyers
+améliorés (Clean Cooking Alliance) le 19 mars 2014 et selon le “Guidelines for Testing Charcoal Stoves with
+WBT 4.2.2” daté du 14 Juin 2013.
+3
+
+[PAGE 5]
+Pour rechercher un rendement énergétique significatif des foyers, le protocole utilisé prévoit au moins trois
+(03) tests d’ébullition de l’eau ; chaque test d’ébullition étant constitué de deux (02) phases et durant en
+moyenne deux (02) heures. Dans le cadre des présents travaux, nous avons effectué des séries de quatre
+(04) tests complets sur chaque foyer.
+I-2-2. Procédure des tests d'ébullition de l'eau
+Un Test complet d’ébullition de l’eau comprend deux phases :
+ Une phase « haute puissance » qui consiste à porter à ébullition une quantité pondérée d’eau.
+Cette phase haute puissance est elle-même divisée en deux étapes :
+✓ Une première étape de démarrage à froid (foyers bien refroidis),
+✓ Suivie d’une deuxième étape de démarrage à chaud (foyers chauds).
+ Une phase « basse puissance » au cours de laquelle on laisse l’eau mijoter à une température
+proche de la température locale d’ébullition (Téb), 99,5°C dans notre cas, pendant quarante-
+cinq (45) minutes.
+Les étapes de la procédure de TEE que nous avons utilisée sont détaillées comme suit :
+ Phase haute puissance - Démarrage à froid
+1. Nettoyer les foyers et s’assurer qu’ils sont froids (à température ambiante) ;
+2. Noter la température ambiante, le taux d’humidité de l’air et la vitesse du vent,
+3. Peser une quantité pondérée de combustible (charbon de bois) bien sec ;
+4. Peser et noter la masse de la marmite vide ;
+5. Peser et noter la masse de la marmite contenant une quantité pondérée d’eau ;
+6. Prendre et noter la température de l’eau de la marmite ;
+7. Allumer le feu. Quand le combustible commence à brûler correctement, poser la marmite et
+déclencher le chronomètre tout en notant l’heure de début ;
+8. Lorsque l’eau commence à bouillir, surveiller la température jusqu’à ce qu’elle atteigne la
+température locale d’ébullition (99,5 °C dans notre cas). Lorsque la température de l’eau
+atteint la valeur précédente, noter le temps (ou l’heure) d’ébullition ;
+4
+
+[PAGE 6]
+9. Peser et noter rapidement la masse de la marmite avec l’eau, la masse du combustible
+restant et éventuellement celle de ses restes de combustions (cendres) ;
+10. Eteindre rapidement le feu et passer à l’étape suivante de démarrage à chaud sans que les
+foyers se refroidissent.
+ Phase haute puissance - Démarrage à chaud
+1. Recharger le foyer avec la quantité pondérée de combustible ;
+2. Remettre la même quantité pondérée d’eau que précédemment dans la même marmite bien
+refroidie ou dans une marmite du même type mais bien froide ;
+3. Peser la marmite avec l’eau ;
+4. Allumer le feu. Quand le combustible commence à brûler correctement, poser la marmite et
+déclencher le chronomètre tout en notant l’heure du début ;
+5. Lorsque l’eau commence à bouillir, attendre que l’eau atteigne la température locale
+d’ébullition. Noter rapidement l’heure où l’eau atteint cette température (99,5°C) ;
+6. Peser et noter rapidement la masse de la marmite avec l’eau et celle du combustible non
+brûlé et passer à la phase basse puissance ou phase de mijotage. La masse des cendres
+est supposée égale à celle de la phase haute puissance-démarrage à froid.
+ Phase basse puissance
+1. Reposer rapidement la marmite avec l’eau chaude, mesurer la température de l’eau chaude
+et réinitialiser le chronomètre ;
+2. Laisser l’eau mijoter à une température proche de Téb – 3°C (96,5°C dans notre cas) pendant
+45 mn puis éteindre le feu. Veiller à ce que la température de l’eau ne baisse pas de plus de
+6°C en dessous de la température locale d’ébullition de l’eau, sinon le test est invalide ;
+3. Peser la marmite avec l’eau chaude, peser séparément le combustible restant et les cendres.
+Remarque importante :
+✓ Durant les trois phases précédentes, les casseroles sont couvertes comme prescrit par le
+“Guidelines for Testing Charcoal Stoves with WBT 4.2.2”;
+5
+
+[PAGE 7]
+✓ Pour démarrer la combustion du combustible (charbon de bois) dans les foyers, 20 g de résidus
+de fibres de noix de palme de nom local « kpèlèbè » utilisé couramment dans la zone et 10 g de
+pétrole lampant ont été utilisés pour l’allumage, comme cela se fait traditionnellement dans la
+région.
+Au cours des tests, le matériel et les éléments suivants sont pris identiques pour chaque type de foyer :
+✓ La marmite (casseroles en aluminium) ;
+✓ La quantité d’eau ;
+✓ La quantité de combustible solide (bois et charbon de bois) ;
+✓ L’orientation au vent.
+I-3. Equipements utilisés pour les tests
+I-3-1. Appareils de mesure
+Le protocole utilisé pour mesurer les rendements énergétiques des foyers améliorés a nécessité un certain
+nombre d’appareils de mesure listés ci-après :
+ des thermomètres pour la mesure des températures,
+ une balance électronique pour les mesures des masses,
+ un hygromètre pour les mesures d’humidité,
+ Un anémomètre pour les mesures de la vitesse du vent,
+ Et une montre ordinaire digitale pour les mesures des durées des tests.
+Le tableau I.1 présente les références des appareils utilisés et leurs principales caractéristiques.
+Tableau I.1 : Appareils de mesure utilisés et leurs principales caractéristiques
+Appareils Caractéristiques
+Thermomètre numérique à sonde « Hanna Type Hanna Instruments HI 98509
+Instruments HI 98509 (checktemp)» (checktemp) : -50°C à +150°C
+Précision : 0,2°C (-30°C à 120°C)
+Balance numérique Type: ULINE A 15405296
+Portée Max: 29 Kg
+Précision: 2 g
+6
+
+[PAGE 8]
+Anémomètre Type KESTREL 4000
+0,6 – 60 m/s
+Hygromètre
+0 – 100%
+Thermomètre de mesure de température
+ambiante -10 ; 55°C
+Humidimètre Type Extech Instruments M0220
+Il est à noter que tous les appareils de mesure utilisés au cours de ces tests ont été étalonnés par le
+Laboratoire National de Métrologie du Togo avant les tests (certificats d’étalonnage joints au rapport).
+I-3-2. Casseroles et Combustibles
+Des casseroles en aluminium, ustensiles de cuisine les plus utilisées au Togo, ont été acquises sur le marché
+local chez un même fournisseur pour les tests. La même taille de casserole de la même marque a été utilisée
+pour tous les foyers testés.
+Le charbon de bois utilisés pour les tests a été celui communément utilisé par les ménages. Il a été acquis
+auprès d’un même fournisseur pour l’ensemble des tests. Le taux d’humidité, déterminé sur une base
+humide, était de 16%.
+I-4. Foyers testés
+L'échantillon de réchauds testés était composé de trois (03) foyers de même taille, utilisant du charbon de
+bois, fabriqués par une société dénommée OPTIMA du Bénin. Les foyers testés ont été livrés à SOS Energie
+Togo par Sequoia Plantation Togo SAU. Les foyers ont été numérotés et testés par groupe de deux (02),
+couplés avec des foyers d'une société béninoise dénommée « OPTIMA » ; comme présenté dans le Tableau
+I.2.
+Tableau I.2 : groupes de foyers testés
+Groupe Type de poêle Nombre
+OPTIMA-BENIN Foyer N°1
+1
+FARM COMMODITIES SARL U-TOGO Foyer N°2
+OPTIMA-BENIN Foyer N°3
+2
+FARM COMMODITIES SARL U-TOGO Foyer N°4
+OPTIMA-BENIN Foyer N°5
+3
+FARM COMMODITIES SARL U-TOGO Foyer N°6
+Les figures I.1 et I.2 présentent quelques images des six (06) foyers testés
+7
+
+[PAGE 9]
+Foyer N°1 Foyer N°2
+Foyer N°3
+FARM COMMODITIES OPTIMA Foyer N°4 Foyer N°5 Foyer N °6
+FARM COMMODITIES OPTIMA FARM COMMODITIES OPTIMA
+Figure I.1 : Image des foyers testés
+Foyer N°6
+Foyer N°4
+Foyer N°5 OPT IMA
+Foyer N°1 Foyer N°2 Foyer N°3 OPTIMA FARM COMMODITIES
+FARM COMMODITIES OPTIMA FARM COMMODITIES
+Figure I.2 : Image des foyers testés avec leurs casseroles
+Le tableau I.3 présente les dimensions des foyers testés.
+Tableau I.3 : Dimensions des foyers testés
+Foyer N°1 Foyer N°2 Foyer N°3 Foyer N°4 Foyer N°5 Foyer N°6
+Dimensions (cm) FARM OPTIMA FARM OPTIMA FARM OPTIMA
+COMMODITIES COMMODITIES COMMODITIES
+Hauteur 24,4 22,5 23,5 24,4 22,5 24,8
+Profondeur de la
+chambre de 8,8 7,1 7,2 8,8 7,1 8,2
+combustion
+8
+
+[PAGE 10]
+Diamètre
+30 29,5 29,5 29,6 29,2 29,6
+extérieur
+Diamètre
+23,3 22,9 23,1 23,7 23,1 23,5
+intérieur
+Diamètre - Trous
+2 2 2 2 2 2
+de grille
+Entrée d'air 10,5x5,1 10,6x6,3 10x5 10,1x5,4 10,9x6,1 10,1x5,1
+I-5. Conditions des tests
+Tous les tests se sont déroulés à Lomé, du 11 au 14 février 2023, au sein des locaux de la ferme
+agronomique de l'Université de Lomé, dans une concession bien clôturée et à l'abri de toute influence
+climatique (vent, pluie, soleil, etc.). Pendant la période des tests, l'humidité relative moyenne de l'air était de
+70 %.
+II- Résultats des tests
+II-1. Organisation pratique des tests
+Comme nous l'avons dit précédemment, des séries de quatre (04) tests complets d'ébullition de l'eau ont été
+effectués sur chaque groupe de deux (02) foyers. Avant les quatre (04) tests effectivement comptabilisés,
+des séances de pré-tests ont été réalisées pour la prise en main du matériel et la mise en condition des
+techniciens. Chaque foyer a été suivi par un technicien dédié tout au long d'un test.
+Les résultats obtenus lors de ces essais sont d'abord présentés sous forme de tableaux détaillant les
+paramètres fonctionnels des foyers pour chaque test, puis sous forme de tableaux récapitulant les valeurs
+moyennes de ces principaux paramètres fonctionnels et enfin leur analyse.
+II-2. Résultats des tests détaillés
+Les tableaux II.1 à II.3 présentent les valeurs détaillées des différents paramètres fonctionnels des 3 foyers
+fabriqués par OPTIMA du Bénin, pour l'ensemble des quatre tests réalisés.
+Tableau II.1 : Résultats des paramètres fonctionnels du premier foyer FARM COMMODITIES SARL U
+TOGO (foyer N°1 FARM COMMODITIES SARL U TOGO)
+Foyer N°1 – FARM COMMODITIES SARL U TOGO
+Param. Unités
+Test 1 Test 2 Test 3 Test 4 Moy DS CoV
+Test haute puissance - démarrage à froid
+VC (g/min) 6,31 6,60 6,31 6,55 6,44 0,15 2,38%
+9
+
+[PAGE 11]
+ET (%) 22,97% 22,93% 22,97% 22,96% 22,96% 0,02% 0,09%
+CS (MJ/min.L) 0,048 0,050 0,048 0,049 0,049 0,001 2,18%
+PF watts 3 136 3 279 3 135 3 254 3 201 76 2,38%
+Test haute puissance - démarrage à chaud
+VC (g/min) 8,99 9,11 8,61 8,67 8,84 0,24 2,77%
+ET (%) 22,96% 22,99% 22,96% 22,92% 22,96% 0,03% 0,13%
+CS (MJ/min.L) 0,068 0,069 0,065 0,066 0,067 0,002 2,91%
+PF watts 4 464 4 527 4 277 4 304 4 393 122 2,77%
+Moy. haute puissance
+ET (%) 22,97% 22,96% 22,97% 22,94% 22,96% 0,01% 0,05%
+Test basse puissance
+VC (g/min) 3,23 3,12 3,23 3,16 3,19 0,05 1,71%
+ET (%) 56,88% 56,82% 56,89% 56,91% 56,87% 0,04% 0,07%
+CS (MJ/min.L) 0,034 0,033 0,034 0,033 0,034 0,001 2,20%
+PF watts 1 605 1 551 1 605 1 569 1 583 27 1,71%
+TDR -- 1,953 2,114 1,953 2,074 2,024 0,083 4,10%
+Tableau II.2 : Résultats des paramètres fonctionnels du second foyer FARM COMMODITIES SARL U
+TOGO (foyer N°3 FARM COMMODITIES SARL U TOGO)
+Foyer N°3 – FARM COMMODITIES SARL U TOGO
+Param. Unités
+Test 1 Test 2 Test 3 Test 4 Moy DS CoV
+Test haute puissance - démarrage à froid
+BR (g/min) 6,14 6,38 6,08 6,51 6,28 0,20 3,2%
+ET (%) 23,42% 23,70% 23,57% 23,74% 23,61% 0,15% 0,61%
+CS (MJ/min.L) 0,047 0,049 0,046 0,050 0,048 0,002 3,89%
+PF watts 3 050 3 167 3 021 3 235 3 118 100 3,2%
+Test haute puissance - démarrage à chaud
+BR (g/min) 7,35 7,38 7,29 7,52 7,39 0,10 1,36%
+ET (%) 23,46% 23,44% 23,54% 23,59% 23,51% 0,07% 0,29%
+10
+
+[PAGE 12]
+CS (MJ/min.L) 0,056 0,057 0,055 0,058 0,056 0,001 1,91%
+PF watts 3 653 3 667 3 618 3 737 3 669 50 1,36%
+Moy. haute puissance
+ET (%) 23,44% 23,57% 23,55% 23,66% 23,56% 0,09% 0,39%
+Test basse puissance
+BR (g/min) 3,28 3,21 3,28 3,20 3,24 0,05 1,39%
+ET (%) 56,80% 56,92% 56,88% 56,79% 56,84% 0,06% 0,11%
+CS (MJ/min.L) 0,035 0,035 0,035 0,034 0,035 0,000 0,013
+PF watts 1 628 1 595 1 631 1 587 1 610 22 1,39%
+TDR -- 1,874 1,985 1,852 2,039 1,937 0,089 4,60%
+Tableau II.3 : Résultats des paramètres fonctionnels du troisième foyer de FARM COMMODITIES SARL U
+TOGO (foyer N°5 FARM COMMODITIES SARL U TOGO)
+Foyer N°5 – FARM COMMODITIES SARL U TOGO
+Param. Unités
+Test 1 Test 2 Test 3 Test 4 Moy DS CoV
+Test haute puissance - démarrage à froid
+VC (g/min) 6,15 6,19 6,15 5,96 6,11 0,10 1,66%
+ET (%) 23,61% 23,80% 23,87% 23,84% 23,78% 0,12% 0,50%
+CS (MJ/min.L) 0,047 0,047 0,047 0,045 0,047 0,001 1,73%
+PF watts 3 055 3 073 3 054 2 961 3 036 50 1,66%
+Test haute puissance - démarrage à chaud
+VC (g/min) 7,01 6,90 6,78 6,73 6,86 0,13 1,82%
+ET (%) 23,71% 23,92% 23,98% 23,94% 23,89% 0,12% 0,51%
+CS (MJ/min.L) 0,053 0,052 0,052 0,051 0,052 0,001 1,99%
+PF watts 3 482 3 428 3 369 3 344 3 406 62 1,82%
+Moy. haute puissance
+ET (%) 23,66% 23,86% 23,93% 23,89% 23,83% 0,12% 0,50%
+Test basse puissance
+VC (g/min) 3,08 3,26 3,03 3,28 3,16 0,13 3,98%
+11
+
+[PAGE 13]
+ET (%) 56,61% 56,98% 56,90% 56,80% 56,82% 0,16% 0,28%
+CS (MJ/min.L) 0,032 0,035 0,032 0,035 0,033 0,002 5,48%
+PF watts 1 529 1 617 1 507 1 631 1 571 62 3,98%
+TDR -- 1,998 1,900 2,027 1,815 1,935 0,097 5,00%
+II-3. Synthèse des moyennes des principaux paramètres fonctionnels de chaque foyer
+Les résultats des valeurs moyennes des principaux paramètres fonctionnels de chaque foyer, issus des 04
+tests, sont présentés dans les tableaux II.5, II.6 et II.7.
+Tableau II.5 Moyennes des principaux paramètres fonctionnels du premier foyer FARM COMMODITIES
+SARL U TOGO (foyer N°1 FARM COMMODITIES SARL U TOGO)
+:
+Moyenne des Moyenne des Moyenne des Moyenne
+4 tests haute 4 Tests Haute 4 tests - basse générale des 4
+Param. Unités puissance - Puissance – puissance tests
+Démarrage à Démarrage à
+froid chaud
+VC (g/min) 6,44 8,84 3,19 6,16
+ET (%) 22,96% 22,96% 56,87% 34,26%
+CS (MJ/min.L) 0,049 0,067 0,034 0,05
+PF watts 3 201 4 393 1 583 3 059
+Tableau II.6 : Moyennes des principaux paramètres fonctionnels du second foyer FARM COMMODITIES
+SARL U TOGO (foyer N°3 FARM COMMODITIES SARL U TOGO)
+Moyenne des Moyenne des Moyenne des Moyenne
+4 tests haute 4 Tests Haute 4 tests Basse générale des 4
+Param. Unités puissance - Puissance – puissance tests
+Démarrage à Démarrage à
+froid chaud
+VC (g/min) 6,28 7,39 3,24 5,64
+ET (%) 23,61% 23,51% 56,84% 34,65%
+CS (MJ/min.L) 0,048 0,056 0,035 0,046
+PF watts 3 118 3 669 1 610 2 799
+12
+
+[PAGE 14]
+Tableau II.7 : Moyennes des principaux paramètres fonctionnels du troisième foyer FARM
+COMMODITIES SARL U TOGO (foyer N°5 FARM COMMODITIES SARL U TOGO)
+Moyenne des Moyenne des Moyenne des Moyenne
+4 tests haute 4 Tests Haute 4 tests - Basse générale des
+Param. Unités puissance - Puissance – puissance 4 tests
+Démarrage à Démarrage à
+froid chaud
+VC (g/min) 6,11 6,86 3,16 5,38
+ET (%) 23,78% 23,89% 56,82% 34,83%
+CS (MJ/min.L) 0,047 0,052 0,033 0,044
+PF watts 3 036 3 406 1 571 2 671
+II-4 Synthèse des valeurs moyennes générales des paramètres fonctionnels des 3 foyers du
+formulaire FARM COMMODITIES SARL U TOGO
+Le tableau II.8 présente le récapitulatif des valeurs moyennes générales des paramètres fonctionnels des 3
+foyers à charbon de bois fabriqués par FARM COMMODITIES SARL U TOGO.
+Tableau II. 8 : récapitulatif des valeurs moyennes générales des paramètres fonctionnels des 3
+foyers à charbon fabriqués par FARM COMMODITIES SARL U TOGO, issus des 4 tests
+Moyenne des Moyenne des Moyenne des Moyenne des
+paramètres du paramètres du paramètres du paramètres des 3
+foyer N°1 – foyer N°3 – foyer N°5 – foyers fabriqués
+Param. Unités
+FARM FARM FARM par FARM
+COMMODITIES COMMODITIES COMMODITIES COMMODITIES
+SARL U TOGO SARL U TOGO SARL U TOGO SARL U TOGO
+VC (g/min) 6,16 5,64 5,38 5,73
+ET (%) 34,26% 34,65% 34,83% 34,58%
+CS (MJ/min.L) 0,05 0,046 0,044 0,047
+PF watts 3 059 2 799 2 671 2843
+III- Analyse des résultats
+L'analyse des résultats des tests d'ébullition de l'eau sur l'échantillon de 03 foyers à coeur céramique, utilisant
+du charbon de bois, fabriqués par FARM COMMODITIES SARL U TOGO, permet de faire les observations
+suivantes :
+L’efficacité thermique moyenne des trois foyers est de 34,26% pour le premier foyer (foyer N°1 –
+FARM COMMODITIES SARL U TOGO), 34,65% pour le deuxième foyer (foyer N°3 – FARM
+COMMODITIES SARL U TOGO) et 34,83% pour le troisième foyer ( foyer N°5 – FARM
+COMMODITIES SARL U TOGO) ; conduisant à une efficacité thermique globale moyenne des 3
+foyers égale à 34,58%.
+13
+
+[PAGE 15]
+La consommation spécifique moyenne des trois foyers est de 0,05 MJ/min.L pour le premier foyer
+(foyer N°1 – FARM COMMODITIES SARL U TOGO), 0,046 MJ/min.L pour le deuxième (foyer N°3
+– FARM COMMODITIES SARL U TOGO) et 0,044 MJ/min.L pour le troisième foyer (foyer N°5 –
+FARM COMMODITIES SARL U TOGO); conduisant à une consommation spécifique moyenne
+globale des 3 foyers égale à 0,047 MJ/min.L.
+La puissance de feu moyenne des trois foyers est de 3 059 watts pour le premier foyer (foyer N°1 –
+FARM COMMODITIES SARL U TOGO), 2 799 watts pour le deuxième foyer (foyer N°4 – FARM
+COMMODITIES SARL U TOGO) et 2 671 watts pour le troisième foyer (foyer N°6 – FARM
+COMMODITIES SARL U TOGO) ; conduisant à une puissance de feu moyenne globale des 3 foyers
+égale à 2843 watts .
+Pour chacun des foyers, la phase basse puissance a une efficacité supérieure à la phase haute
+puissance, en raison de l'inertie thermique induite par le cœur céramique.
+Conclusion
+La présente étude a consisté en des séries de quatre (04) tests d’ébullition de l’eau sur un échantillon de 03
+foyers à cœur céramique fabriqués par FARM COMMODITIES SARL U TOGO et fournis par la société
+Sequoia Plantation Togo SAU. Les résultats des valeurs moyennes d’efficacité thermique ont montré que
+l’efficacité de chaque foyer est supérieure à 30%, avec une moyenne globale de 34,58%.
+Ces résultats montrent que ces foyers peuvent être qualifiés de foyers améliorés, nettement plus efficaces
+que les foyers traditionnels, capables de procurer des avantages certains à leurs utilisateurs en termes
+d’économies de combustibles, de gain de temps, de protection de la santé, de limitation de la pression sur
+l’environnement, de limitations de gaz à effet de serre et de changement climatique.
+Fait à Lomé, le 20 février 2023
+Le président de SOSET
+Professeur Yendoubé LARE
+Enseignant/Chercheur à l'Université de Lomé
+14
+
+[PAGE 16]
+Annexe
+Quelques images des tests
+15
+
+[PAGE 17]
+Préparation des foyers pour la mise à feu
+16
+
+[PAGE 18]
+Phase de montée en puissance du feu (haute puissance - démarrage à froid)
+Phase de mijotage (basse puissance)
+17

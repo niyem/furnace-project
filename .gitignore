@@ -207,3 +207,36 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Added 2026-05-25 by the LARE revision session ---
+# Raw experimental data (SOS Energie Togo / Universite de Lome; collaborator-owned)
+data/raw/
+data/processed/
+
+# Archive of old (pre-revision) modeling approach
+outputs/_archive_old_approach/
+
+# Local-only or temporary scratch
+*.b64
+
+# --- Added 2026-05-25 by the LARE revision session ---
+# Raw experimental data (collaborator-owned; not for public release)
+data/raw/
+data/processed/
+
+# Archive of old (pre-revision) modeling approach
+outputs/_archive_old_approach/
+
+# Local-only or temporary scratch
+*.b64
+
+# --- Added 2026-05-25 by the LARE revision session ---
+# Raw experimental data (collaborator-owned; not for public release)
+data/raw/
+data/processed/
+
+# Archive of old (pre-revision) modeling approach
+outputs/_archive_old_approach/
+
+# Local-only or temporary scratch
+*.b64

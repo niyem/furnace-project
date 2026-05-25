@@ -1,0 +1,3 @@
+---
+L68: PHASE_ORDER = ['cold', 'hot', 'simmer']
+L329:     (re.compile(r'simmer|basse\s*puissance|low\s*power', re.I), 'simmer'),

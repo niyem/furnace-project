@@ -1,0 +1,5 @@
+TOTAL_COLS=38
+CANDS=campaign,sale_year,test_year
+campaign|nunique=12|dtype=object|sample=['Fichiers_Tests_Prakash_OK_OK', 'Rapport Toyola 2018', 'Rapport Toyola 2019', 'Rapport Toyola 2020', 'Rapport Toyola 2021', 'TESTS_CATHY 2021', 'Test Ghana Octobre 2023', 'Tests SEQUOIA 2024']
+sale_year|nunique=8|dtype=float64|sample=[np.float64(2017.0), np.float64(2020.0), np.float64(2021.0), np.float64(2018.0), np.float64(2019.0), np.float64(2022.0), np.float64(2014.0), np.float64(2016.0)]
+test_year|nunique=0|dtype=float64|sample=[]

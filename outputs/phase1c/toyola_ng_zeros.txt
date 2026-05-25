@@ -1,0 +1,25 @@
+--- Brand counts ---
+{'Toyola': np.int64(1950), 'Toyola-Nigeria': np.int64(165), 'Prakash': np.int64(151), 'SEQUOIA-tested': np.int64(120), 'Ghana-MAN': np.int64(24)}
+--- Toyola-Nigeria rows: 165 ---
+replicate_kind value_counts: {'replicate': np.int64(150), 'average': np.int64(15)}
+eff_cold | n=60 | min=0.328 | median=0.356 | max=0.377 | zeros=0
+eff_hot | n=60 | min=0.337 | median=0.369 | max=0.379 | zeros=0
+eff_simmer | n=60 | min=0.000 | median=0.000 | max=0.000 | zeros=60
+fp_simmer | n=0 | min=nan | median=nan | max=nan | zeros=0
+br_simmer | n=0 | min=nan | median=nan | max=nan | zeros=0
+--- All zero eff_simmer rows: 90 ---
+Brand distribution: {'Prakash': np.int64(45), 'Toyola-Nigeria': np.int64(45)}
+Campaign distribution: {'Fichiers_Tests_Prakash_OK_OK': np.int64(45), 'Tests_SURAJ_2023': np.int64(45)}
+--- Stoves with at least one zero eff_simmer replicate ---
+n_stoves_with_zero=30
+Sample paths: ['Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx', 'Fichiers_Tests_Prakash_OK_OK/CL/CL2020.xlsx', 'Fichiers_Tests_Prakash_OK_OK/CL/CL2021.xlsx', 'Fichiers_Tests_Prakash_OK_OK/CS/CS2018.xlsx', 'Fichiers_Tests_Prakash_OK_OK/CS/CS2020.xlsx']
+--- Per-stove eff_simmer replicate values (first 5 stoves) ---
+  Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx -> [0.0, 0.0, 0.0]
+  Fichiers_Tests_Prakash_OK_OK/CL/CL2020.xlsx -> [0.0, nan, 0.0, 0.0, nan, nan, nan, nan, nan, nan]
+  Fichiers_Tests_Prakash_OK_OK/CL/CL2021.xlsx -> [0.0, nan, 0.0, 0.0, nan, nan, nan, nan, nan, nan]
+  Fichiers_Tests_Prakash_OK_OK/CS/CS2018.xlsx -> [0.0, nan, 0.0, 0.0, nan, nan, nan, nan, nan, nan]
+  Fichiers_Tests_Prakash_OK_OK/CS/CS2020.xlsx -> [0.0, nan, 0.0, 0.0, nan, nan, nan, nan, nan, nan]
+--- Are zero eff_simmer rows also zero in fp/br_simmer? ---
+  fp_simmer: n_nan=90 n_zero=0 sample=[]
+  br_simmer: n_nan=90 n_zero=0 sample=[]
+  tboil_hot: n_nan=0 n_zero=0 sample=[32.00000000000004, 31.999999999999964, 30.99999999999989, 42.000000000000014, 43.00000000000001]

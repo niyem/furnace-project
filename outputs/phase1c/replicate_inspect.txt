@@ -1,0 +1,12 @@
+LONG_EXISTS=True
+WIDE_EXISTS=True
+LONG_SHAPE=(31151, 27)
+LONG_COLS=['src_path', 'source_kind', 'tester', 'test_year', 'location', 'manufacturer', 'stove_model', 'altitude', 'campaign', 'brand', 'format', 'sale_year', 'material', 'country_make', 'phase', 'metric', 'replicate', 'value', 'units', 'height_cm', 'outside_d_cm', 'chamber_d_cm', 'chamber_depth_cm', 'inlet_w_cm', 'inlet_h_cm', 'inlet_area_cm2', 'chamber_volume_cm3']
+LONG_HEAD=
+                                      src_path   source_kind  tester  test_year  location  manufacturer  stove_model  altitude                      campaign    brand format  sale_year material country_make phase metric replicate  value units  height_cm  outside_d_cm  chamber_d_cm  chamber_depth_cm  inlet_w_cm  inlet_h_cm  inlet_area_cm2  chamber_volume_cm3
+0  Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx  wbt_template     NaN        NaN       NaN           NaN          NaN       NaN  Fichiers_Tests_Prakash_OK_OK  Prakash     CL     2017.0     clay         Togo  cold  tboil        T1   43.0   min       40.0          48.0          34.5              10.0        12.0        21.5           258.0          9348.20164
+1  Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx  wbt_template     NaN        NaN       NaN           NaN          NaN       NaN  Fichiers_Tests_Prakash_OK_OK  Prakash     CL     2017.0     clay         Togo  cold  tboil        T2   42.0   min       40.0          48.0          34.5              10.0        12.0        21.5           258.0          9348.20164
+2  Fichiers_Tests_Prakash_OK_OK/CL/CL2017.xlsx  wbt_template     NaN        NaN       NaN           NaN          NaN       NaN  Fichiers_Tests_Prakash_OK_OK  Prakash     CL     2017.0     clay         Togo  cold  tboil        T3   42.0   min       40.0          48.0          34.5              10.0        12.0        21.5           258.0          9348.20164
+WIDE_SHAPE=(2410, 38)
+WIDE_COLS=['src_path', 'replicate', 'replicate_kind', 'source_kind', 'campaign', 'brand', 'format', 'sale_year', 'material', 'country_make', 'tester', 'test_year', 'location', 'manufacturer', 'stove_model', 'altitude', 'height_cm', 'outside_d_cm', 'chamber_d_cm', 'chamber_depth_cm', 'inlet_w_cm', 'inlet_h_cm', 'inlet_area_cm2', 'chamber_volume_cm3', 'br_cold', 'br_hot', 'br_simmer', 'eff_cold', 'eff_hot', 'eff_simmer', 'fp_cold', 'fp_hot', 'fp_simmer', 'sfc_cold', 'sfc_hot', 'sfc_simmer', 'tboil_cold', 'tboil_hot']
+replicate_kind_counts={'replicate': np.int64(1960), 'average': np.int64(450)}

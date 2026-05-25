@@ -1,0 +1,8 @@
+BASELINE | feature_set=geometry | n=2070 | r2_mean=0.0038
+BASELINE | feature_set=wbt_other_phase | n=2214 | r2_mean=0.6749
+BASELINE | feature_set=combined | n=2070 | r2_mean=0.6136
+--- After excluding sentinel zeros: 2290 rows (was 2410) ---
+CLEAN    | feature_set=geometry | n=1950 | r2_mean=0.2908
+CLEAN    | feature_set=wbt_other_phase | n=2094 | r2_mean=0.6267
+CLEAN    | feature_set=combined | n=1950 | r2_mean=0.6777
+eff_simmer ICC: baseline=0.9942 (n_stoves=450) | clean=0.9227 (n_stoves=420)

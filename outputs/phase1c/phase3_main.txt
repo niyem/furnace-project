@@ -1,0 +1,120 @@
+L176:         y_test_mean=float(test[target].mean()),
+L177:         y_test_std=float(test[target].std()),
+L178:     )
+L179: 
+L180: 
+L181: def run_probe(df: pd.DataFrame, probe_name: str, hold_col: str) -> pd.DataFrame:
+L182:     """Run holdout for every distinct value of df[hold_col]."""
+L183:     rows = []
+L184:     values = sorted(df[hold_col].dropna().unique().tolist())
+L185:     log.info("=== %s probe: %d holdout values from `%s` ===", probe_name, len(values), hold_col)
+L186:     for hv in values:
+L187:         for target in TARGETS:
+L188:             if target not in df.columns:
+L189:                 continue
+L190:             res = evaluate_holdout(df, target, hold_col, hv)
+L191:             if res is None:
+L192:                 continue
+L193:             rows.append({
+L194:                 "probe": probe_name,
+L195:                 "holdout_col": hold_col,
+L196:                 "holdout_value": hv,
+L197:                 "target": target,
+L198:                 "model": "rf",
+L199:                 **res,
+L200:             })
+L201:             log.info("  %s=%s | %s | n_tr=%d n_te=%d | R^2=%+.3f MAE=%.4f",
+L202:                      probe_name, hv, target, res["n_train"], res["n_test"],
+L203:                      res["r2"], res["mae"])
+L204:     return pd.DataFrame(rows)
+L205: 
+L206: 
+L207: # =============================================================================
+L208: # Reporting
+L209: # =============================================================================
+L210: 
+L211: def write_md(results: pd.DataFrame, out_path: Path) -> None:
+L212:     lines = [
+L213:         "# Phase 3: OOD Generalization Probes",
+L214:         "",
+L215:         "Random Forest on combined features (geometry + cross-phase WBT). Train on all "
+L216:         "stoves where the holdout column != held-out value; test on the rest.",
+L217:         "",
+L218:         "R² < 0 means worse than predicting the train-set mean.",
+L219:         "",
+L220:     ]
+L221:     for probe in sorted(results["probe"].unique()):
+L222:         psub = results[results["probe"] == probe]
+L223:         lines.append(f"## Probe: {probe}")
+L224:         lines.append("")
+L225:         for target in sorted(psub["target"].unique()):
+L226:             tsub = psub[psub["target"] == target].sort_values("holdout_value")
+L227:             lines.append(f"### Target: `{target}`")
+L228:             lines.append("")
+L229:             lines.append("| Holdout | n_train | n_test | R² | MAE | y_test_mean | y_test_std |")
+L230:             lines.append("|---|---:|---:|---:|---:|---:|---:|")
+L231:             for _, r in tsub.iterrows():
+L232:                 lines.append(
+L233:                     f"| {r['holdout_value']} | {r['n_train']} | {r['n_test']} | "
+L234:                     f"{r['r2']:+.3f} | {r['mae']:.4f} | "
+L235:                     f"{r['y_test_mean']:.4f} | {r['y_test_std']:.4f} |"
+L236:                 )
+L237:             lines.append("")
+L238:     out_path.write_text("\n".join(lines))
+L239: 
+L240: 
+L241: # =============================================================================
+L242: # Orchestration
+L243: # =============================================================================
+L244: 
+L245: def run() -> None:
+L246:     df = load_wide()
+L247: 
+L248:     all_rows: list[pd.DataFrame] = []
+L249: 
+L250:     # LOFO — leave-one-format-out
+L251:     df_lofo = df.dropna(subset=["format"]).copy()
+L252:     all_rows.append(run_probe(df_lofo, "LOFO", "format"))
+L253: 
+L254:     # LOMO — leave-one-material-out (only meaningful if >=2 materials)
+L255:     df_lomo = df.dropna(subset=["material"]).copy()
+L256:     if df_lomo["material"].nunique() >= 2:
+L257:         all_rows.append(run_probe(df_lomo, "LOMO", "material"))
+L258: 
+L259:     # LOBO — leave-one-brand-out
+L260:     df_lobo = df.dropna(subset=["brand"]).copy()
+L261:     all_rows.append(run_probe(df_lobo, "LOBO", "brand"))
+L262: 
+L263:     results = pd.concat(all_rows, ignore_index=True) if all_rows else pd.DataFrame()
+L264:     out_path = OUT_DIR / "ood_results.csv"
+L265:     results.to_csv(out_path, index=False)
+L266:     log.info("wrote %s (%d rows)", out_path, len(results))
+L267: 
+L268:     write_md(results, OUT_DIR / "ood_summary.md")
+L269:     log.info("wrote ood_summary.md")
+L270: 
+L271:     # Console snapshot per probe
+L272:     log.info("\n--- Probe summary (mean R² across holdouts, per target) ---")
+L273:     pivot = (
+L274:         results.groupby(["probe", "target"])["r2"].agg(["mean", "std", "count"])
+L275:         .reset_index()
+L276:         .rename(columns={"mean": "r2_mean", "std": "r2_std", "count": "n_cells"})
+L277:     )
+L278:     log.info("\n%s", pivot.to_string(index=False))
+L279: 
+L280: 
+L281: if __name__ == "__main__":
+L282:     run()
+--- CAMPAIGNS ---
+Test Ghana Octobre 2023|stoves=6
+Tests_SEQUOIA 2022|stoves=6
+Tests_SEQUOIA 2023|stoves=6
+Tests SEQUOIA 2024|stoves=12
+Fichiers_Tests_Prakash_OK_OK|stoves=15
+Tests_SURAJ_2023|stoves=15
+Rapport Toyola 2020|stoves=60
+Rapport Toyola 2018|stoves=60
+Rapport Toyola 2019|stoves=60
+Rapport Toyola 2021|stoves=60
+Tests_Cathy 2018|stoves=60
+TESTS_CATHY 2021|stoves=90

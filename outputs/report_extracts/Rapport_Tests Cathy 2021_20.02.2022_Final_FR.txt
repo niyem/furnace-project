@@ -1,0 +1,437 @@
+Table des Matières
+Abréviations et Sigles	2
+I.	INTRODUCTION	3
+II.	PLAN D’ECHANTILLONNAGE	3
+II-1 Design de l’Echantillonnage	3
+II-2 Données à Collecter	7
+II-3 Mise en Œuvre	7
+III.	METHODOLOGIE ET MATERIEL DES TESTS	………………………………………………8
+III-1. Objectifs des tests	8
+III-2. Description et Procédure des tests	8
+III-3. Equipements utilisés pour les tests	11
+III-4. Foyers testés	12
+III-5. Conditions des tests	17
+IV.	Résultats  des  Tests	17
+IV-1. Organisation pratique des tests	17
+IV-2. Récapitulatifs des moyennes des efficacités thermiques des foyers	19
+V.	Analyse des résultats	22
+VI.	Conclusion	23
+Abréviations et Sigles
+Introduction
+Dans le cadre de la mise en œuvre de leur projet « Promoting Efficient Stove Dissemination and Use in West Africa  (PoA 9666) » portant sur les foyers améliorés  au Togo, les entreprises  Accessible Energy et Toyola Energy Limited ont commis l’association SOS Energie Togo (SOSET) pour effectuer des tests sur les performances techniques des foyers améliorés distribués par Toyola Energy Togo SARL au Togo.
+Le présent rapport présente les résultats de ces tests, caractérisés essentiellement par des tests d’ébullition de l’eau, sur un échantillon représentatif des foyers distribués par Toyola au Togo au cours des années 2016, 2017 et 2020. L’objectif principal de ces tests était de déterminer d’une part l'efficacité thermique des foyers par taille et par groupe d’âge et d’autre part l’effet de la saison (pluvieuse ou sèche) sur l’efficacité thermique des foyers. 
+Précisément, les travaux de tests d’ébullition de l’eau ont été effectués sur un échantillon de 30 foyers de cinq différentes tailles (HS, HM, HL, CL et CS) vendus en 2016, 2017 et 2020 par Toyola Energy Sarl au Togo. Les tests complets sur tous les foyers ont été effectués sur deux périodes : une première série de tests au mois d’août 2021 (en saison pluvieuse) et une seconde série au mois de décembre 2021 (en saison sèche).
+La suite de ce rapport décrit les différents aspects liés aux conditions et au déroulement des tests, ainsi que les résultats obtenus et les conclusions qui en découlent.
+Plan d’échantillonnage
+  II.1 Design de l’échantillonnage
+Objectifs et exigences de fiabilité
+Les tests effectués sur les foyers Toyola ont pour objectif de mesurer l’efficacité thermique d’un échantillon représentatif des foyers vendus en 2016, 2017 et 2020.
+Le calcul de la taille de l’échantillon des foyers de 2016 et 2017 a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie Togo en 2020.
+Par ailleurs, étant donné qu’en 2021 les foyers vendus en 2020 étaient à leur première année d’utilisation, le calcul de la taille de l’échantillon des foyers de 2020 a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests des foyers de 2017 réalisés par SOS Energie Togo en 2018. En effet, l’année 2018 correspondait également à la première année d’utilisation des foyers vendus en 2017.
+Tous les calculs ont tenu compte d’un intervalle de confiance de 95% et d’une précision de 10%.
+En outre, La collecte des foyers de 2020 pour les tests d’efficacité thermique a été effectuée à la période pendant laquelle seuls les foyers de format HM étaient vendus. Pour ce faire, les tests des foyers de 2020 n’ont pas pu prendre en compte tous les autres formats (HS, HL, CS, CL).
+Population Cible
+Les populations cibles auprès desquelles ont été recueillis les foyers sont les ménages et commerces utilisant des foyers Toyola acquis en 2016, 2017 et 2020.
+Méthode d’échantillonnage
+Conformément au guide « Sampling and surveys for CDM project activities and programme of activities » version 04.0, un échantillonnage aléatoire stratifié par année selon le format a été effectué comme le montre le tableau I.1.
+Calcul de la taille de l’échantillon
+Tableau I.1 : Vente, efficacité moyenne et écart-type des foyers Toyola selon l’année et le format
+                      (source : Rapports des tests d’ébullition des foyers  2018 et 2020)
+Conformément au guide « Sampling and surveys for CDM project activities and programme of activities »: version 04.0, le calcul de la taille d’échantillon a été effectué à l’aide de la formule suivante :
+Où     
+1,96(z)      représente l’intervalle de confiance de 95% exigé 
+0,1            représente la précision exigée (10%)
+N               représente le nombre total de foyers vendus
+V               représente la variance 
+SD            représente l’écart-type (ou déviation standard)
+Moyenne représente l’efficacité thermique moyenne
+Pour les calculs avec la valeur t (students-t), 1,96 est remplacé par la valeur t correspondant à la taille de l’échantillon.
+Le calcul de V est effectué de la manière suivante :
+Où :
+GHS : est le nombre de foyers de taille HS vendus 
+SDHS : est la déviation standard (ou l’écart type) des foyers de taille HS
+GHM : est le nombre de foyers de taille HM vendus
+SDHM : est la déviation standard des foyers de taille HM
+GHL : est le nombre de foyers de taille HL vendus 
+SDHL : est la déviation standard des foyers de taille HL
+GCS : est le nombre de foyers de taille CS vendus
+SDCS : est la déviation standard des foyers de taille CS
+GCL : est le nombre de foyers de taille CL vendus
+SDCL : est la déviation standard des foyers de taille CL
+N : est le nombre total de foyers vendus
+Où :
+GHS : est le nombre de foyers vendus de taille HS
+MoyHS : est l’efficacité thermique moyenne des foyers HS
+GHM : est le nombre de foyers vendus de taille HM
+MoyHM : est l’efficacité thermique moyenne des foyers HM
+GHL : est le nombre de foyers vendus de taille HL
+MoyHL : est l’efficacité thermique moyenne des foyers HL
+GCS : est le nombre de foyers vendus de taille CS
+MoyCS : est l’efficacité thermique moyenne des foyers CS
+GCL : est le nombre de foyers vendus de taille CL
+MoyCL : est l’efficacité thermique moyenne des foyers CL
+N : est le nombre total de foyers vendus
+Le résultat du calcul de la taille d’échantillon avec la valeur z et la valeur t est résumé dans le tableau I.2 suivant : 
+Tableau I.2 : Résultat du calcul de la taille d’échantillon
+Puisque le projet finance carbone calcule les réductions d’émission sur chaque taille de foyer et pour avoir une meilleure représentativité et une meilleure précision par format de foyer, nous avons opté de tester le nombre de foyers suivant :
+Tableau I.3 : Nombre de foyers à tester par années et selon le format 
+Sélection de l’Echantillon
+Sur la base des données de vente des foyers Toyola, le tirage de l’échantillon a été effectué par année ; et, afin de s’assurer du caractère aléatoire du tirage, la sélection des ménages a été effectuée à l’aide de la fonction « ALEA» d’Excel conformément au guide : «  Sampling and surveys for CDM project activities and programme of activities » , version 04.0 .
+II-2 Données à Collecter
+Données à mesurer sur le terrain
+Les principales données à mesurer au cours des travaux de tests d’ébullition de l’eau sont : la masse de combustible (charbon de bois) nécessaire pour faire bouillir une quantité pondérée d’eau, le temps nécessaire pour porter cette quantité pondérée d’eau à ébullition, la quantité d’eau évaporée à ébullition, la quantité de charbon de bois nécessaire pour faire mijoter une quantité pondérée d’eau pendant 45 minutes, la quantité de charbon de bois consommée ainsi que la quantité d’eau évaporée à l’issue du mijotage, et les quantités de braise produites à l’issue de chaque phase. Ces données peuvent varier légèrement selon les saisons et selon la qualité du combustible (pouvoir calorifique du charbon de bois utilisé). 
+Assurance Qualité/Contrôle Qualité
+L’équipe des tests est formée de 3 membres dont 2 techniciens et un responsable sénior. Avant le début des tests proprement dits, des séances de pré-test ont été organisées afin de préciser certains paramètres et de prendre la main. Tous les travaux de test ont été effectués par l’ensemble de l’équipe, chaque technicien s’occupant d’un seul foyer à la fois sous la supervision du responsable sénior. Au cours des travaux de test, un contrôle journalier des données a été effectué par le responsable d’équipe afin d’assurer la qualité de celles-ci. Toutes les données aberrantes ont été écartées et le test concerné repris. 
+Analyse 
+L’efficacité thermique des foyers a servi à calculer le volume de charbon économisé par les foyers Toyola et par conséquent le volume de CO2 réduit.
+II-3 Mise en Œuvre - Plan d’Exécution
+Le plan d’échantillonnage a été mis en œuvre aussitôt après le calcul de la taille de l’échantillon. Le matériel nécessaire utilisé pour mener à bien le travail est le suivant : les foyers testés (qui ont été récupérés auprès des usagers sélectionnés aléatoirement), des casseroles, le charbon de bois (acheté sur le marché local auprès d’un même vendeur), des louches à feu, le matériau de mise à feu (pétrole et kpèlèbè), des thermomètres, des balances, une montre, un hygromètre, un anémomètre, des torchons, des gants, du papier (fiches de relevés de données) et des stylos.
+En termes de personnel, il a été engagé des techniciens de laboratoires de physique thermique ayant une certaine expérience en ce qui concerne les tests de foyers et un expert sénior bien expérimenté des travaux de tests de foyers pour diriger les techniciens.
+Méthodologie et matériel des tests
+III-1. Objectifs des tests
+Le protocole général de test des foyers comporte trois types : 
+les Tests d’Ebullition de l’Eau (TEE),
+les Tests de Cuisine Contrôlée (TCC),
+les Tests de Performance à la Cuisine (TPC).
+Les tests effectués sur les foyers ont pour objectif d’évaluer les performances globales de fonctionnement de ces foyers. Dans le cadre de cette étude, seuls les tests d’ébullition de l’eau ont été retenus. Les TEE constituent des simulations scientifiques simples et courtes de la procédure normalement suivie au cours de la cuisson des repas. Ils servent à comparer les performances de différents foyers ou la performance d’un même foyer dans des situations opérationnelles différentes.   Ils permettent de déterminer, entre autres :
+Le temps moyen nécessaire pour amener une quantité d’eau à ébullition (correspondant au temps moyen nécessaire pour faire cuire un aliment) ;
+La consommation spécifique moyenne en combustible de chaque foyer ;
+Le rendement thermique global de chaque foyer.
+III-2. Description et Procédure des tests
+ III-2-1. Description des tests
+Les tests ont été réalisés selon le protocole WBT 4.2.3 publié par l’Alliance mondiale pour les foyers améliorés le 19 mars 2014 et le “Guidelines for Testing Charcoal Stoves with WBT 4.2.2” daté du 14 Juin 2013.
+Pour rechercher un rendement énergétique significatif des foyers, le protocole utilisé prévoit au moins trois (03) tests d’ébullition de l’eau ; chaque test d’ébullition est constitué de deux (02) phases et dure en moyenne trois (03) heures. Dans le cadre de ces travaux, nous avons effectué des séries de quatre (4) tests complets.
+III-2-2. Procédure des Tests d’Ebullition de l’Eau 
+Un test complet d’ébullition de l’eau comprend deux phases :
+Une phase « haute puissance » qui consiste à porter à ébullition une quantité pondérée d’eau. Cette phase haute puissance est elle-même divisée en deux étapes : 
+Une première étape de démarrage à froid (foyers bien refroidis), 
+Suivie d’une deuxième étape de démarrage à chaud (foyers chauds).
+Une phase « basse puissance » au cours de laquelle on laisse l’eau mijoter à une température proche de 99,5°C ( Téb) pendant quarante-cinq (45) minutes
+Les étapes de la procédure sont :
+Phase haute puissance-Démarrage à froid
+Nettoyer les foyers et s’assurer qu’ils sont froids (à température ambiante) ;
+Noter la température ambiante, le taux d’humidité de l’air et l’intensité du vent,
+Peser une quantité pondérée de charbon de bois bien sec ;
+Peser et noter la masse de la marmite vide, et contenant une quantité pondérée d’eau ;
+Prendre et noter la température de l’eau de la marmite ;
+Allumer le feu. Quand le charbon commence à brûler correctement, poser la marmite et déclencher le chronomètre tout en notant l’heure de début ;
+Lorsque l’eau commence à bouillir, surveiller la température jusqu’à ce qu’elle atteigne la température locale d’ébullition 99,5 °C. Lorsque la température de l’eau atteint la valeur précédente noter le temps (ou l’heure) d’ébullition ;
+Peser et noter rapidement la masse de la marmite avec l’eau, du charbon de bois restant et celle des cendres ;
+Eteindre le feu rapidement.
+Phase haute puissance-Démarrage à chaud
+Recharger le foyer avec la quantité pondérée de charbon de bois ;  
+Remettre une même quantité pondérée d’eau que précédemment dans une marmite du même type mais bien froide. Peser la marmite vide avec l’eau ;
+Allumer le feu. Quand le charbon commence à brûler correctement, poser la marmite et déclencher le chronomètre tout en notant l’heure du début ;
+Noter rapidement l’heure où l’eau atteint la température locale d’ébullition 99,5°C. Lorsque la température de l’eau atteint la valeur précédente, noter le temps (ou l’heure) d’ébullition ;
+Peser et noter rapidement la masse de la marmite avec l’eau et celle du charbon de bois. La masse des cendres est supposée égale à celle de la phase haute puissance-démarrage à froid.
+Phase basse puissance
+Reposer rapidement la marmite avec l’eau chaude, mesurer la température de l’eau chaude et réinitialiser le chronomètre ;
+Laisser l’eau mijoter à une température proche de 96,5°C (Téb – 3°C) pendant 45 mn puis éteindre le feu. Veiller à ce que la température de l’eau ne baisse pas de plus de 6°C en dessous de la température d’ébullition de l’eau de 99,5°C, sinon le test est invalide ;
+Peser la marmite avec l’eau chaude, peser séparément le charbon de bois restant et les cendres.
+Remarque importante : 
+Durant les trois phases précédentes les casseroles sont couvertes comme prescrit par le “Guidelines for Testing Charcoal Stoves with WBT 4.2.2”;
+Pour démarrer la combustion du charbon dans les différents foyers, 20 g de résidus de fibres de noix de palme de nom local « kpèlèbè » utilisé couramment dans la zone et 10 g de pétrole lampant ont été utilisés.
+Au cours des tests, le matériel et les éléments suivants sont pris identiques pour chaque type de foyer :
+La marmite (casseroles en aluminium) ;
+La quantité d’eau ;
+La quantité de charbon ;
+L’orientation au vent.
+III-3. Equipements utilisés pour les tests
+III-3-1. Casseroles et Combustibles
+Des casseroles en aluminium, ustensiles de cuisine les plus utilisées au Togo, ont été acquises sur le marché local chez le même fournisseur pour les tests. 
+Le charbon de bois utilisé pour les tests a été celui communément utilisé par les ménages. Il a été acquis auprès d’un même fournisseur pour l’ensemble des tests. Le taux d’humidité de ce charbon, déterminé sur une base humide, était de 6,37% en moyenne pour les tests du mois d’août-septembre 2021 et de 5,45% en moyenne pour les tests du mois de décembre 2021. 
+III-3-2. Appareils de mesure
+Le protocole utilisé pour mesurer les rendements énergétiques des foyers améliorés a nécessité un certain nombre d’appareils de mesure : 
+des thermomètres pour la mesure des températures,
+une balance électronique pour les mesures des masses,
+un hygromètre pour les mesures d’humidité,
+un anémomètre pour les mesures de la vitesse de l’air,
+et une montre ordinaire digitale pour la durée des tests. 
+Le tableau III.1 indique les appareils utilisés et leurs principales caractéristiques.
+Tableau III.1 : Appareils de mesure utilisés et leurs principales caractéristiques
+Tous les appareils de mesure utilisés au cours de ces tests ont été étalonnés par le Laboratoire National de Métrologie du Togo.
+III-4. Foyers testés 
+L’échantillon de foyers testés était composé de 30 foyers de cinq différentes tailles : petit format pour usage domestique HS, moyen format pour usage domestique HM, grand format pour usage domestique HL, petit format pour usage commercial CS et grand format pour usage commercial CL. Les foyers ont été récupérés auprès d’usagers qui ont été choisis aléatoirement de la base de données de Toyola. L’échantillonnage a été réalisé conformément aux recommandations du guide d’échantillonnage et d’enquêtes des projets de développement propre, version 04.0 (voire plan d’échantillonnage en début de ce rapport). Le tableau III.2, la figure III.1 et le tableau III.3 présentent respectivement les foyers testés par taille et par année, leur image physique et leurs caractéristiques géométriques.
+Tableau III.2 : Foyers de chaque format testés
+Figure  III.1 : Images des tailles de foyers testés
+Tableau III.3 : Caractéristiques physiques moyennes des foyers testés
+Le tableau III.4 présente les informations générales sur l’ensemble des foyers testés.
+Tableau III.4 : informations générales sur les foyers testés
+Chaque test d’ébullition a porté sur deux (02) foyers de même taille et de même année pour tous les formats de foyers. Une série de 4 tests d’ébullition complets a été effectuée sur chaque paire.
+III-5. Conditions des Tests 
+L’ensemble des tests s’est déroulé à Lomé, dans l’enceinte de la ferme agronomique de l’Université de Lomé, dans une concession bien clôturée et à l’abri de toute influence du vent. 
+La première série de tests s’est déroulée du 16 août au 17 septembre 2021 durant la grande saison des pluies à Lomé, alors que la deuxième série s’est déroulée du 06 décembre 2021 au 14 janvier 2022 durant la grande saison sèche caractérisée par le vent sec de l’Harmattan.  Durant la période de la première série des tests, le taux d’humidité moyen de l’air était de 82% alors que ce taux n’était que de 60% durant la période de la deuxième série des tests.
+Les photographies de quelques manipulations sont indiquées en annexe.
+Résultats  des  Tests 
+IV-1. Organisation pratique des Tests
+Comme nous l’avons dit précédemment, des séries de quatre (4) tests complets d’ébullition de l’eau ont été effectuées pour chaque groupe de foyers des années 2016, 2017 et 2020. Le tableau IV-1 récapitule l’organisation des groupes de foyers testés.
+Tableau IV-1 : Organisation des groupes de foyers testés
+Avant les quatre (4) tests effectivement comptabilisés, des séances de prétests ont été réalisées pour la prise en main du matériel et la mise en conditions des techniciens. 
+Les résultats des valeurs moyennes des efficacités thermiques de chaque foyer sur les quatre tests retenus dans le cadre de cette étude sont présentés dans les tableaux IV-2 et IV-3. Les résultats détaillés des efficacités de chaque foyer sont donnés en annexe.
+IV-2 Récapitulatif des moyennes des efficacités thermiques des foyers
+IV-2.1 Efficacités thermiques obtenues à l’issue des tests des mois d’aout-septembre 2021
+Tableau IV-2 : Efficacités thermiques obtenues à l’issue des tests d’août - septembre 2021
+IV-2.2 Efficacités thermiques obtenues à l’issue des tests du mois de décembre 2021
+Tableau IV-3 : Efficacités thermiques obtenues à l’issue des tests de décembre 2021
+IV-2.3 Efficacités thermiques moyennes obtenues à l’issue des deux tests (Août et décembre 2021) et    
+             vérification de la fiabilité des valeurs obtenues
+Les tableaux IV-3 et IV-4 présentent respectivement les efficacités thermiques des foyers et la vérification de leur fiabilité sur l’ensemble des deux tests.
+Tableau IV-3 : Efficacités thermiques obtenues à l’issue de l’ensemble des tests
+Tableau IV-4 : Vérification de la fiabilité des efficacités thermiques
+Analyse des résultats
+L’analyse des résultats des tests d’ébullition de l’eau sur les 30 foyers de formats HS, HM, HL, CS et CL vendus par Toyola Energy SARL au Togo, au cours des années 2016, 2017 et 2020 permet de constater que :
+L’efficacité thermique des foyers varie d’une taille à une autre et d’une année à une autre, 
+Pour tous les formats, les valeurs d’efficacité sont très proches, probablement dues au bon état des foyers (pas de foyers assez dégradés) ; 
+Pour l’ensemble des foyers, on constate que, lorsque les foyers sont en bon état, l’efficacité n’a pas diminué significativement avec l’âge ; 
+Pour l’ensemble des foyers, on constate que les efficacités obtenues au cours des tests réalisés lors des deux saisons (pluvieuse et sèche) sont très proches même si les efficacités obtenues en saison sèche semblent légèrement plus grandes, probablement à cause de l’influence de l’humidité de l’air.
+Conclusion
+Au vu des résultats précédents, nous pouvons conclure que sur les foyers vendus durant les 3 années (2016 ,  2017 et 2020), l’efficacité thermique globale des foyers Toyola de formats HM, HS, HL, CS et CL vendus par Toyola Energy Sarl n’a pas varié de façon significative, L’âge et la saison ne semblent donc pas avoir un effet négatif significatif sur l’efficacité de ces foyers lorsqu’ils sont en bon état physique.
+Fait à Lomé, le 16 février 2022
+Le responsable des travaux de tests
+Dr Yendoubé LARE
+Président de SOS ENERGIE TOGO
+[TABLE-ROW] Présenté par : 
+                               
+
+SOS ENERGIE TOGO
+Février 2022
+[TABLE-ROW] CoV : |  | Coefficient de variation
+[TABLE-ROW] CS : |  | Consommation spécifique
+[TABLE-ROW] DS : |  | Déviation standard (écart-type)
+[TABLE-ROW] ET : |  | Efficacité thermique
+[TABLE-ROW] Moy. : |  | Moyenne arithmétique
+[TABLE-ROW] Param. : |  | Paramètres
+[TABLE-ROW] PF : |  | Puissance du feu
+[TABLE-ROW] TEE : |  | Test d’Ebullition de l’Eau
+[TABLE-ROW] VC :
+TDR : |  | Vitesse de combustion
+Turning-down ratio
+[TABLE-ROW] Stove size | 2016 stoves | 2016 stoves | 2016 stoves | 2017 stoves | 2017 stoves | 2017 stoves | 2020 stoves | 2020 stoves | 2020 stoves
+[TABLE-ROW] Stove size | Number of stoves sold in 2016 | Standard Deviation (from WBT 2020) | Average efficiency (from WBT 2020) | Number of stoves sold in 2017 | Standard Deviation  (from WBT 2020) | Average Efficiency (from WBT 2020) | Number of stoves sold in 2020 | Standard Deviation  (from WBT 2018) | Average Efficiency (from WBT 2018)
+[TABLE-ROW] HS | 2 827 | 0,30% | 31,04% | 1 270 | 0,64% | 31,72% |  |  | 
+[TABLE-ROW] HM | 14 843 | 0,17% | 32,95% | 11 602 | 0,30% | 32,81% | 2 733 | 0,75% | 34,73%
+[TABLE-ROW] HL | 2 028 | 0,34% | 31,93% | 1 515 | 0,27% | 31,54% |  |  | 
+[TABLE-ROW] CS | 48 | 0,43% | 33,39% | 111 | 1,00% | 33,02% |  |  | 
+[TABLE-ROW] CL | 59 | 0,67% | 34,09% | 53 | 0,50% | 34,64% |  |  | 
+[TABLE-ROW] Total | 19 805 |  |  | 14 551 |  |  | 2 733 |  | 
+[TABLE-ROW] Stove year | Z | students t-value | N | Standard deviation | Mean Efficiency value | V | Précision | n with z value | n to be tested | n with t value
+[TABLE-ROW] 2016 | 1,96 | 2,262 | 19 805 | 0,002 | 0,3258 | 0,00005 | 0,1 | 0,02 | 10 | 0,02
+[TABLE-ROW] 2017 | 1,96 | 2,262 | 14 551 | 0,004 | 0,3259 | 0,00012 | 0,1 | 0,05 | 10 | 0,06
+[TABLE-ROW] 2020 | 1,96 | 2,262 | 2 733 | 0,008 | 0,3473 | 0,00047 | 0,1 | 0,18 | 10 | 0,24
+[TABLE-ROW] Taille/Année | 2016 | 2017 |  | 2020
+[TABLE-ROW] HS | 2 | 2 |  | 
+[TABLE-ROW] HM | 2 | 2 |  | 10
+[TABLE-ROW] HL | 2 | 2 |  | 
+[TABLE-ROW] CS | 2 | 2 |  | 
+[TABLE-ROW] CL | 2 | 2 |  | 
+[TABLE-ROW] Total | 10 | 10 |  | 10
+[TABLE-ROW] Appareils | Caractéristiques
+[TABLE-ROW] Thermomètre numérique à sonde « Hanna Instruments HI 98509 (checktemp)» | Type Hanna Instruments HI 98509 (checktemp) : -50°C  à  +150°C
+Précision : 0,2°C (-30°C  à   120°C)
+[TABLE-ROW] Balance numérique | Type: ULINE A 15405296
+Portée Max: 29 Kg 
+Précision: 1 g
+[TABLE-ROW] Anémomètre 
+Hygromètre
+Thermomètre de mesure de température ambiante | Type KESTREL 4000
+0,6 – 60 m/s
+0 – 100%
+-10 - 55°C
+[TABLE-ROW] Humidimètre | Type Extech Instruments M0220
+[TABLE-ROW] Format | Années | Années | Années | Total
+[TABLE-ROW] Format | 2016 | 2017 | 2020 | Total
+[TABLE-ROW] HS | 2 | 2 | 0 | 4
+[TABLE-ROW] HM | 2 | 2 | 10 | 14
+[TABLE-ROW] HL | 2 | 2 | 0 | 4
+[TABLE-ROW] CS | 2 | 2 | 0 | 4
+[TABLE-ROW] CL | 2 | 2 | 0 | 4
+[TABLE-ROW] Total | 10 | 10 | 10 | 30
+[TABLE-ROW] Caractéristiques (cm) | HS | HM | HL | CS | CL
+[TABLE-ROW] Hauteur | 22 | 24,5 | 26,5 | 34,5 | 41,5
+[TABLE-ROW] Profondeur - Chambre de combustion | 5,9 | 7 | 7,2 | 10,1 | 10,5
+[TABLE-ROW] Diamètre extérieur | 25 ,9 | 32,1 | 34,5 | 45,9 | 49,8
+[TABLE-ROW] Diamètre - Chambre de combustion | 19,4 | 22,5 | 23,4 | 31,6 | 36
+[TABLE-ROW] Diamètre - Trous Chambre de combustion | 2 | 2 | 2 | 2 | 2
+[TABLE-ROW] Porte – Entrée d’air | 5,5x9,6 | 7x10,9 | 7x12 | 9,4x16,5 | 11,5x22,5
+[TABLE-ROW] Format et année du foyer | DATE de récupération | ANCIEN NUMERO | NOUVEAU NUMERO | NOM & PRENOM | QUARTIER | CONTACT | Code attribué pour le test
+[TABLE-ROW] HS 2016 | 15/07/2021 | T2HS603240
+N°1 | T4HS2000460 | LA PACIENCE | ADIDOGOM | 90 10 92 84 | HS 2016 N°1
+[TABLE-ROW] HS 2016 | 18/07/2021 | T2HS600218
+N°2 | T4HS2000061 | Mme SOSOU | CACAVELI | 90811537 | HS 2016 N°2
+[TABLE-ROW] HM 2016 | 18/07/2021 | T2HM600252
+N°1 | T4HM2003188 | BETO | BE | 98 84 60 75 | HM 2016 N°1
+[TABLE-ROW] HM 2016 | 18/07/2021 | T2HM604120
+N°2 | T4HM2003192 | MAM MAYEVA | ZANGUERA | 90 89 79 12 | HM 2016 N°2
+[TABLE-ROW] HL 2016 | 16/07/2021 | T2HL600934
+N°1 | T4HL2000018 | Marguerite (service traiteur) | Nukafu | 90 28 32 25 | HL 2016 N°1
+[TABLE-ROW] HL 2016 | 16/07/2021 | T2HL600925
+N°2 | T4HL2000104 | BATAMA | SEPEREPE | 90 35 22 25 | HL 2016 N°2
+[TABLE-ROW] CS 2016 | 15/07/2021 | T2CS600016
+N°1 | T4CS2000058 | ADJEODA | MINAMADOU | 90 02 57 88 | CS 2016 N°1
+[TABLE-ROW] CS 2016 | 17/07/2021 | T2CS600406
+N°2 | T4CS2000016 | AZIA | AGOE ZONGO | 91094257 | CS 2016 N°2
+[TABLE-ROW] CL 2016 | 28/07/2021 | T2CL600003
+N°1 | T4CL2000027 | CUISINE BIENETRE | AKODESSEWA | 90928375 | CL 2016 N°1
+[TABLE-ROW] CL 2016 | 04/08/2021 | T2CL600127
+N°2 | T4CL2000058 | MARIE | FRANSISCAIN | 90028587 | CL 2016 N°2
+[TABLE-ROW] HS 2017 | 08/07/2021 | T3HS700216
+N°1 | T4HS2000035 | ABLA | KLIKAME | 91776233 | HS 2017 N°1
+[TABLE-ROW] HS 2017 | 15/07/2021 | T3HS700319
+N°2 | T4HS2000041 | MANUELA | GBLINKOME | 92191954 | HS 2017 N°2
+[TABLE-ROW] HM 2017 | 02/07/2021 | T3HM703290
+N°1 | T4HM2003195 | MARGUERITE
+SERVICE TRAITEUR | NUKAFU | 91 89 62 15 | HM 2017 N°1
+[TABLE-ROW] HM 2017 | 05/07/2021 | T3HM703314
+N°2 | T4HM2003201 | LOUCIA | Adjougba | 91 11 90 15 | HM 2017 N°2
+[TABLE-ROW] HL 2017 | 04/07/2021 | T2HL700923
+N°1 | T4HL2000019 | BATAMA | SEPEREPE | 90 35 22 25 | HL 2017 N°1
+[TABLE-ROW] HL 2017 | 08/07/2021 | T3HL701612
+N°2 | T4HL2005280 | TSEVIETO | ASSIGOME | 90 77 57 01 | HL 2017 N°2
+[TABLE-ROW] CS 2017 | 16/07/2021 | T3CS700142
+N°1 | T4CS2000028 | MAMAN DAGANON | GBOMAME | 93165481 | CS 2017 N°1
+[TABLE-ROW] CS 2017 | 16/07/2021 | T3CS600415
+N°2 | T4CS2000020 | BATAMA | SEPEREPE | 90 35 22 25 | CS 2017 N°2
+[TABLE-ROW] CL 2017 | 30/07/2021 | T2CL700079
+N°1 | T4CL200015 | AMEKOUDJI | ADAMAVO | 90297737 | CL 2017 N°1
+[TABLE-ROW] CL 2017 | 02/08/2021 | T2CL700085
+N°2 | T4CL2000013 | MAMA AUGUSTINE | VAKPO | 90020347 | CL 2017 N°2
+[TABLE-ROW] HM
+2020 | 15/07/2021 | T4HM2002117
+N°1 | T4HM2000236 | AKOETE AFI ANGELE | ADIDOGOME | 93 34 08 47 | HM 2020 N°1
+[TABLE-ROW] HM
+2020 | 21/07/2021 | T4HM2007548
+N°2 | T4HM2000240 | Mme FARE | ADJOUGBA | 91 83 57 37 | HM 2020 N°2
+[TABLE-ROW] HM
+2020 | 21/07/2021 | T4HM2001624
+N°3 | T4HM2000147 | COLLETTE | Aagoe-Nyivé commune 6 | 90 70 38 07 | HM 2020 N°3
+[TABLE-ROW] HM
+2020 | 24/27/2021 | T4HM2001660
+N°4 | T4HM2005312 | MLATAWO VALERINE | CEG AGOE EST | 96 06 75 61 | HM 2020 N°4
+[TABLE-ROW] HM
+2020 | 28/07/2021 | T4HM2007495
+N°5 | T4HM200645 | PASCALINE | ADJOUGBA | 92 43 23 70 | HM 2020 N°5
+[TABLE-ROW] HM
+2020 | 28/07/2021 | T4HM2006585
+N°6 | T4HM2008118 | Odette ATTISSO | KPOGAN | 90 37 60 47 | HM 2020 N°6
+[TABLE-ROW] HM
+2020 | 29/07/2021 | T4HM2005423
+N°7 | T4HM2000145 | Mr NIKABOU | LOSSOSSIME | 91 52 93 55 | HM 2020 N°7
+[TABLE-ROW] HM
+2020 | 30/07/2021 | T4HM2001659
+N°8 | T4HM2000297 | Da Ayoko | Djidjolé | 70231333 | HM 2020 N°8
+[TABLE-ROW] HM
+2020 | 30/07/2021 | T4HM2001636
+N°9 | T4HM2000262 | Mariette | Totsi | 91 40 71 12 | HM 2020 N°9
+[TABLE-ROW] HM
+2020 | 04/08/2021 | T4HM2001661
+N°10 | T4HM2000275 | Maman Andre | Totsi total | 96 06 75 61 | HM 2020 N°10
+[TABLE-ROW] Format de foyer | Groupe de foyers testés
+[TABLE-ROW] HS 2016 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HM 2016 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HL 2016 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] CS 2016 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] CL 2016 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HS 2017 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HM 2017 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HL 2017 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] CS 2017 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] CL 2017 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HM 2020 | Foyer N°1
+Foyer N°2
+[TABLE-ROW] HM 2020 | Foyer N°3
+Foyer N°4
+[TABLE-ROW] HM 2020 | Foyer N°5
+Foyer N°6
+[TABLE-ROW] HM 2020 | Foyer N°7
+Foyer N°8
+[TABLE-ROW] HM 2020 | Foyer N°9
+Foyer N°10
+[TABLE-ROW] Foyers | Foyers | Efficacité thermique | Moyenne Efficacité thermique | Deviation Standard
+[TABLE-ROW] HS 2016 | HS 2016-1 | 30,85% | 32,69% | 1,53%
+[TABLE-ROW] HS 2016 | HS 2016-2 | 30,12% | 32,69% | 1,53%
+[TABLE-ROW] HM 2016 | HM 2016-1 | 32,92% | 32,69% | 1,53%
+[TABLE-ROW] HM 2016 | HM 2016-2 | 32,75% | 32,69% | 1,53%
+[TABLE-ROW] HL 2016 | HL 2016-1 | 31,65% | 32,69% | 1,53%
+[TABLE-ROW] HL 2016 | HL 2016-2 | 32,35% | 32,69% | 1,53%
+[TABLE-ROW] CS 2016 | CS 2016-1 | 33,12% | 32,69% | 1,53%
+[TABLE-ROW] CS 2016 | CS 2016-2 | 33,51% | 32,69% | 1,53%
+[TABLE-ROW] CL 2016 | CL 2016-1 | 34,90% | 32,69% | 1,53%
+[TABLE-ROW] CL 2016 | CL 2016-2 | 34,70% | 32,69% | 1,53%
+[TABLE-ROW] HS 2017 | HS 2017 -1 | 32,33% | 33,17% | 1,28%
+[TABLE-ROW] HS 2017 | HS 2017-2 | 32,29% | 33,17% | 1,28%
+[TABLE-ROW] HM 2017 | HM 2017-1 | 33,02% | 33,17% | 1,28%
+[TABLE-ROW] HM 2017 | HM 2017-2 | 32,80% | 33,17% | 1,28%
+[TABLE-ROW] HL 2017 | HL 2017-1 | 31,43% | 33,17% | 1,28%
+[TABLE-ROW] HL 2017 | HL 2017-2 | 31,88% | 33,17% | 1,28%
+[TABLE-ROW] CS 2017 | CS 2017-1 | 33,81% | 33,17% | 1,28%
+[TABLE-ROW] CS 2017 | CS 2017-2 | 33,98% | 33,17% | 1,28%
+[TABLE-ROW] CL 2017 | CL 2017-1 | 35,21% | 33,17% | 1,28%
+[TABLE-ROW] CL 2017 | CL 2017-2 | 34,96% | 33,17% | 1,28%
+[TABLE-ROW]  | HM 2020 - 1 | 32,79% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 2 | 32,76% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 3 | 32,74% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 4 | 32,90% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 5 | 32,71% | 32,77% | 0,17%
+[TABLE-ROW] HM 2020 | HM 2020 - 6 | 32,78% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 7 | 32,80% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 8 | 32,81% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 9 | 32,72% | 32,77% | 0,17%
+[TABLE-ROW]  | HM 2020 - 10 | 32,72% | 32,77% | 0,17%
+[TABLE-ROW] Foyers | Foyers | Efficacité thermique | Moyenne Efficacité thermique | Deviation Standard
+[TABLE-ROW] HS 2016 | HS 2016-1 | 30,47% | 32,82% | 1,62%
+[TABLE-ROW] HS 2016 | HS 2016-2 | 30,93% | 32,82% | 1,62%
+[TABLE-ROW] HM 2016 | HM 2016-1 | 32,82% | 32,82% | 1,62%
+[TABLE-ROW] HM 2016 | HM 2016-2 | 32,89% | 32,82% | 1,62%
+[TABLE-ROW] HL 2016 | HL 2016-1 | 31,86% | 32,82% | 1,62%
+[TABLE-ROW] HL 2016 | HL 2016-2 | 31,87% | 32,82% | 1,62%
+[TABLE-ROW] CS 2016 | CS 2016-1 | 33,33% | 32,82% | 1,62%
+[TABLE-ROW] CS 2016 | CS 2016-2 | 33,43% | 32,82% | 1,62%
+[TABLE-ROW] CL 2016 | CL 2016-1 | 35,17% | 32,82% | 1,62%
+[TABLE-ROW] CL 2016 | CL 2016-2 | 35,39% | 32,82% | 1,62%
+[TABLE-ROW] HS 2017 | HS 2017 -1 | 30,79% | 33,02% | 1,56%
+[TABLE-ROW] HS 2017 | HS 2017-2 | 31,02% | 33,02% | 1,56%
+[TABLE-ROW] HM 2017 | HM 2017-1 | 32,87% | 33,02% | 1,56%
+[TABLE-ROW] HM 2017 | HM 2017-2 | 32,93% | 33,02% | 1,56%
+[TABLE-ROW] HL 2017 | HL 2017-1 | 32,17% | 33,02% | 1,56%
+[TABLE-ROW] HL 2017 | HL 2017-2 | 32,17% | 33,02% | 1,56%
+[TABLE-ROW] CS 2017 | CS 2017-1 | 33,53% | 33,02% | 1,56%
+[TABLE-ROW] CS 2017 | CS 2017-2 | 34,24% | 33,02% | 1,56%
+[TABLE-ROW] CL 2017 | CL 2017-1 | 35,17% | 33,02% | 1,56%
+[TABLE-ROW] CL 2017 | CL 2017-2 | 35,28% | 33,02% | 1,56%
+[TABLE-ROW]  | HM 2020 - 1 | 32,91% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 2 | 32,97% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 3 | 32,86% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 4 | 32,87% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 5 | 32,74% | 32,85% | 0,07%
+[TABLE-ROW] HM 2020 | HM 2020 - 6 | 32,86% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 7 | 32,92% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 8 | 32,75% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 9 | 32,85% | 32,85% | 0,07%
+[TABLE-ROW]  | HM 2020 - 10 | 32,81% | 32,85% | 0,07%
+[TABLE-ROW] Année de vente des foyers | ET (%) | DS(%) | Intervalle de Confiance | Intervalle de Confiance
+[TABLE-ROW] 2016 | 32,75% | 2,23% | 34,35% | 31,16%
+[TABLE-ROW] 2017 | 33,09% | 2,02% | 34,54% | 31,65%
+[TABLE-ROW] 2020 | 32,81% | 0,09% | 32,88% | 32,75%
+[TABLE-ROW] Année de vente des foyers | 2016 | 2017 | 2020
+[TABLE-ROW] Nombre de foyers testés | 10 | 10 | 10
+[TABLE-ROW] Efficacité thermique moyenne | 32,75% | 33,09% | 32,81%
+[TABLE-ROW] Deviation Standard | 2,23% | 2,02% | 0,09%
+[TABLE-ROW] Variance | 0,050% | 0,041% | 0,000%
+[TABLE-ROW] Population totale | 19 805 | 14 551 | 2 733
+[TABLE-ROW] Fraction de l'échantillon | 0,050% | 0,069% | 0,366%
+[TABLE-ROW] Erreur standard | 0,705% | 0,638% | 0,029%
+[TABLE-ROW] Valeur T | 2,262 | 2,262 | 2,262
+[TABLE-ROW] Précision | 1,594% | 1,444% | 0,066%
+[TABLE-ROW] Precision relative | 4,87% | 4,36% | 0,20%
+[TABLE-ROW] Limite supérieure de l'intervalle de confiance | 34,35% | 34,54% | 32,88%
+[TABLE-ROW] Limite inférieure de l'intervalle de confiance | 31,16% | 31,65% | 32,75%
