@@ -125,11 +125,16 @@ def features_for(kind: str, target: str, df: pd.DataFrame) -> tuple[list[str], l
         c for c in df.columns
         if any(c.startswith(p + "_") for p in WBT_METRIC_PREFIXES)
     ]
-    # Drop the target itself, and (for phase-targeted predictions) drop same-phase WBT cols.
+    # Drop the target itself, derived *_combined columns, same-phase WBT cols, and
+    # (for the eff_combined target) the per-phase efficiency columns it averages.
     def _keep(col: str) -> bool:
         if col == target:
             return False
+        if col.endswith("_combined"):
+            return False
         if target_phase is not None and col.endswith("_" + target_phase):
+            return False
+        if target == "eff_combined" and col.startswith("eff_") and col.split("_")[-1] in PHASES:
             return False
         return True
     wbt_nums = [c for c in metric_cols if _keep(c)]

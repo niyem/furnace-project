@@ -104,6 +104,7 @@ def grouped_cv_gbt(sub, target, num_cols, cat_cols):
 def main():
     log.info("loading %s", DATA_PATH)
     df = pd.read_csv(DATA_PATH)
+    df = df[df["replicate_kind"] == "average"].copy()
 
     records = []
     for target in TARGETS:

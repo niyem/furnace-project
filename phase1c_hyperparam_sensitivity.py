@@ -110,6 +110,7 @@ def grouped_cv_score(sub: pd.DataFrame, target: str, num_cols: list[str],
 def main() -> int:
     log.info("loading %s", DATA_PATH)
     df = pd.read_csv(DATA_PATH)
+    df = df[df["replicate_kind"] == "average"].copy()
     num_cols, cat_cols = features_for(FEATURE_SET, TARGET, df)
     require_geom = FEATURE_SET in ("geometry", "combined")
     sub = filter_for_modeling(df, TARGET, num_cols, cat_cols, require_geometry=require_geom)
