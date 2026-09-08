@@ -1,0 +1,140 @@
+=== EXTRACTED REPORTS (outputs/report_extracts/) ===
+
+--- Caractéristiques Foyers.txt ---
+  (no funding-related matches)
+
+--- Rapport Global_Tests de Foyers_Accessible Energy 2019F_09.01.2020.txt ---
+  L21: Dans le cadre de la mise en œuvre de leur projet « Promoting Efficient Stove Dissemination and Use in West Africa  (PoA 9666) » portant sur les foyers améliorés  au Togo, les entreprises  Accessible E
+  L22: Le présent rapport présente les résultats de ces tests, caractérisés essentiellement par des tests d’ébullition de l’eau sur un échantillon représentatif des foyers distribués par Toyola au Togo au co
+  L23: Précisément, les travaux de tests d’ébullition de l’eau ont été effectués sur un échantillon de 30 foyers de cinq différentes tailles (HS, HM, HL, CL et CS) vendus en 2014,  2016 et 2017 par Toyola En
+  L28: L’objectif des tests effectués sur les foyers Toyola est de mesurer l’efficacité thermique d’un échantillon représentatif de foyers vendus en 2014, 2016 et 2017.
+  L29: Le calcul de la taille de l’échantillon a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie Togo  en 2018. Ces calculs ont tenu compte d’un 
+  L31: La population cible auprès de laquelle ont été recueillis les foyers est constituée de ménages et commerces utilisant actuellement les foyers Toyola acquis en 2014, 2016 et 2017.
+  L33: Conformément au guide « Sampling and surveys for CDM project activities and programme of activities » version 04.0, un échantillonnage aléatoire stratifié a été effectué (par année et par taille) comm
+  L35: Tableau I.1 : Vente, efficacité moyenne et écart-type des foyers Toyola selon l’année et le format
+  L37: Conformément au guide « Sampling and surveys for CDM project activities and programme of activities »: version 04.0, le calcul de la taille d’échantillon a été effectué à l’aide de la formule suivante
+  L76: Sur la base des données de vente des foyers Toyola, le tirage de l’échantillon a été effectué par année ; et, afin de s’assurer du caractère aléatoire du tirage, la sélection des ménages a été effectu
+  L83: L’efficacité thermique des foyers a servi à calculer le volume de charbon économisé par les foyers Toyola et par conséquent le volume de CO2 réduit.
+  L152: L’échantillon de foyers testés était composé de 30 foyers de cinq différentes tailles : petit format pour usage domestique HS, moyen format pour usage domestique HM, grand format pour usage domestique
+  L184: L’analyse des résultats des tests d’ébullition de l’eau sur les 30 foyers de formats HS, HM, HL, CS et CL vendus par Toyola Energy SARL au Togo, au cours des années 2014, 2016 et 2017 permet de consta
+  L190: Au vu des résultats précédents, nous pouvons conclure que sur les 3  années (2014, 2016 et 2017), l’efficacité thermique globale des foyers Toyola de formats HM, HS, HL, CS et CL vendus par Toyola Ene
+  L194: Président de SOS ENERGIE TOGO
+
+--- Rapport_Tests Cathy 2021_20.02.2022_Final_FR.txt ---
+  L21: Dans le cadre de la mise en œuvre de leur projet « Promoting Efficient Stove Dissemination and Use in West Africa  (PoA 9666) » portant sur les foyers améliorés  au Togo, les entreprises  Accessible E
+  L22: Le présent rapport présente les résultats de ces tests, caractérisés essentiellement par des tests d’ébullition de l’eau, sur un échantillon représentatif des foyers distribués par Toyola au Togo au c
+  L23: Précisément, les travaux de tests d’ébullition de l’eau ont été effectués sur un échantillon de 30 foyers de cinq différentes tailles (HS, HM, HL, CL et CS) vendus en 2016, 2017 et 2020 par Toyola Ene
+  L28: Les tests effectués sur les foyers Toyola ont pour objectif de mesurer l’efficacité thermique d’un échantillon représentatif des foyers vendus en 2016, 2017 et 2020.
+  L29: Le calcul de la taille de l’échantillon des foyers de 2016 et 2017 a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie Togo en 2020.
+  L30: Par ailleurs, étant donné qu’en 2021 les foyers vendus en 2020 étaient à leur première année d’utilisation, le calcul de la taille de l’échantillon des foyers de 2020 a été effectué avec l’efficacité 
+  L34: Les populations cibles auprès desquelles ont été recueillis les foyers sont les ménages et commerces utilisant des foyers Toyola acquis en 2016, 2017 et 2020.
+  L36: Conformément au guide « Sampling and surveys for CDM project activities and programme of activities » version 04.0, un échantillonnage aléatoire stratifié par année selon le format a été effectué comm
+  L38: Tableau I.1 : Vente, efficacité moyenne et écart-type des foyers Toyola selon l’année et le format
+  L40: Conformément au guide « Sampling and surveys for CDM project activities and programme of activities »: version 04.0, le calcul de la taille d’échantillon a été effectué à l’aide de la formule suivante
+  L79: Sur la base des données de vente des foyers Toyola, le tirage de l’échantillon a été effectué par année ; et, afin de s’assurer du caractère aléatoire du tirage, la sélection des ménages a été effectu
+  L86: L’efficacité thermique des foyers a servi à calculer le volume de charbon économisé par les foyers Toyola et par conséquent le volume de CO2 réduit.
+  L154: L’échantillon de foyers testés était composé de 30 foyers de cinq différentes tailles : petit format pour usage domestique HS, moyen format pour usage domestique HM, grand format pour usage domestique
+  L182: L’analyse des résultats des tests d’ébullition de l’eau sur les 30 foyers de formats HS, HM, HL, CS et CL vendus par Toyola Energy SARL au Togo, au cours des années 2016, 2017 et 2020 permet de consta
+  L188: Au vu des résultats précédents, nous pouvons conclure que sur les foyers vendus durant les 3 années (2016 ,  2017 et 2020), l’efficacité thermique globale des foyers Toyola de formats HM, HS, HL, CS e
+  L192: Président de SOS ENERGIE TOGO
+  L196: SOS ENERGIE TOGO
+
+--- Rapport_WBT_ Sequoia February 2023- 3 foyers FARM COMMODITIES SARL U TOGO_20.02.2023_Français.txt ---
+  L13: Pour Sequoia Plantation Togo SAU
+  L15: SOS ENERGIE TOGO
+  L55: Dans le cadre de la mise en œuvre de son projet Finance Carbone sur les foyers améliorés au Togo, Sequoia
+  L56: Plantation Togo SAU a requis les services de l'association SOS Energie Togo (SOSET) pour réaliser des
+  L81: améliorés (Clean Cooking Alliance) le 19 mars 2014 et selon le “Guidelines for Testing Charcoal Stoves with
+  L192: bois, fabriqués par une société dénommée OPTIMA du Bénin. Les foyers testés ont été livrés à SOS Energie
+  L193: Togo par Sequoia Plantation Togo SAU. Les foyers ont été numérotés et testés par groupe de deux (02),
+  L423: Sequoia Plantation Togo SAU. Les résultats des valeurs moyennes d’efficacité thermique ont montré que
+
+
+=== RAW .DOCX FILES (data/raw/) ===
+Found 16 .docx files.
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Fiches Excels Test_2020/Test_Août_2020_TOYOLA/~$ésultats de tests de   foyers_Aout 2020.docx (extract failed) ---
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Rapport Toyola 2018/Rapport Tests_Global_2018_LARE-janvier 2019-CDV_RevueLARE_09.02.2019.docx ---
+  SOS ENERGIE TOGO
+  Rapport des tests d’ébullition sur les foyers Toyola
+  ) » portant sur les foyers améliorés  au Togo, les entreprises  Accessible Energy et Toyola Energy Limited ont commis l’association SOS Energie Togo (SOSET) pour effectuer des test
+  Le présent rapport présente les résultats de ces tests, caractérisés essentiellement par des tests d’ébullition de l’eau sur un échantillon représentatif des foyers distribués par 
+  par Toyola Energy Sarl au Togo. Les tests complets sur tous les foyers ont été effectués sur deux périodes : une première sé
+  L’objectif des tests effectués sur les foyers Toyola est d
+  foyers Toyola (acquis en 2014, 2016 et 2017
+  Conformément au guide « Sampling and surveys for CDM project activities and programme of activities » version 04.0, un échantillonnage aléatoire stratifié sera effectué (par année 
+  Vente, efficacité moyenne et écart-type des foyers Toyola selon l’année et le format
+  Sampling and surveys for CDM project activities and programme of activities
+  Standard « Sampling and Surveys for CDM project activities and programme of activities » version 5.0, nous avons decidé de tester 30 foyers repartis parmi les differentes taile de 
+  base des données de vente des foyers Toyola, le tirage de l’échantillon
+  Sampling and surveys for CDM project activities and programme of activities : version 0
+  L’efficacité thermique des foyers servira à calculer le volume de charbon économisé par les foyers Toyola et par conséquent le volume de CO
+  foyers de cinq différentes tailles : petit format pour usage domestique HS, moyen format pour usage domestique HM, grand format pour usage domestique HL, petit format pour usage co
+  foyers de formats HS, HM, HL, CS et CL vendus par Toyola Energy SARL au Togo, au cours des anné
+  ), l’efficacité thermique globale des foyers Toyola de formats HM, HS, HL, CS et CL vendus par Toyola Energy Sarl n’a pas varié de façon significative, L’âge et la saison ne semble
+  Président de SOS ENERGIE TOGO
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Rapport Toyola 2019/Rapport Global_Tests de Foyers_Accessible Energy 2019F_09.01.2020.docx ---
+  SOS ENERGIE TOGO
+  sur les foyers Toyola
+  Dans le cadre de la mise en œuvre de leur projet « Promoting Efficient Stove Dissemination and Use in West Africa  (PoA 9666) » portant sur les foyers améliorés  au Togo, les entre
+  Le présent rapport présente les résultats de ces tests, caractérisés essentiellement par des tests d’ébullition de l’eau sur un échantillon représentatif des foyers distribués par 
+  Précisément, les travaux de tests d’ébullition de l’eau ont été effectués sur un échantillon de 30 foyers de cinq différentes tailles (HS, HM, HL, CL et CS) vendus en 2014,  2016 e
+  L’objectif des tests effectués sur les foyers Toyola est de mesur
+  échantillon a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie Togo  en 2018.
+  actuellement les foyers Toyola acquis en 2014, 2016 et 2017
+  Sampling and surveys for CDM project activities and programme of activities
+  Vente, efficacité moyenne et écart-type des foyers Toyola selon l’année et le format
+  Sur la base des données de vente des foyers Toyola, le tirage de l’échantillon a été effectué par année ; et, afin de s’assurer du caractère aléatoire du tirage, la sélection des m
+  L’efficacité thermique des foyers a servi à calculer le volume de charbon économisé par les foyers Toyola et par conséquent le volume de CO
+  L’échantillon de foyers testés était composé de 30 foyers de cinq différentes tailles : petit format pour usage domestique HS, moyen format pour usage domestique HM, grand format p
+  L’analyse des résultats des tests d’ébullition de l’eau sur les 30 foyers de formats HS, HM, HL, CS et CL vendus par Toyola Energy SARL au Togo, au cours des années 2014, 2016 et 2
+  Au vu des résultats précédents, nous pouvons conclure que sur les 3  années (2014, 2016 et 2017), l’efficacité thermique globale des foyers Toyola de formats HM, HS, HL, CS et CL v
+  Président de SOS ENERGIE TOGO
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Rapport Toyola 2020/Rapport_Tests Cathy 2020_11.01.2021.docx ---
+  SOS ENERGIE TOGO
+  Toyola
+  Limited ont commis l’association SOS Energie Togo (SOSET) pour effectuer des tests sur les performances techniques des foyers améliorés distribués par
+  Le calcul de la taille de cet échantillon a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie Togo en 2019.
+  for CDM
+  Président de SOS ENERGIE TOGO
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Rapport Toyola 2020/Test_Août_2020_TOYOLA/~$ésultats de tests de   foyers_Aout 2020.docx (extract failed) ---
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Rapport Toyola 2021/Rapport_Tests Cathy 2021_20.02.2022_Final_FR.docx ---
+  SOS ENERGIE TOGO
+  Toyola
+  Energy Limited ont commis l’association SOS Energie Togo (SOSET) pour effectuer des tests sur les performances techniques des foyers améliorés distribués par
+  Le calcul de la taille de l’échantillon des foyers de 2016 et 2017 a été effectué avec l’efficacité moyenne et l’écart-type issus des résultats des tests réalisés par SOS Energie T
+  Par ailleurs, étant donné qu’en 2021 les foyers vendus en 2020 étaient à leur première année d’utilisation, le calcul de la taille de l’échantillon des foyers de 2020 a été effectu
+  for CDM
+  Président de SOS ENERGIE TOGO
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/TESTS_CATHY 2021/Résultats_Test_December_2021/Résultats_Test_December_2021/-Résultats de tests de   foyers_Décembre_2021.docx ---
+  SOS ENERGIE TOGO
+  ACCESSIBLE ENERGY ET TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/TESTS_CATHY 2021/Résultats_Test_December_2021_2/Résultats_Test_December_2021/-Résultats de tests de   foyers_Décembre_2021.docx ---
+  SOS ENERGIE TOGO
+  ACCESSIBLE ENERGY ET TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/TESTS_CATHY 2021/TestAout2021/-Résultats de tests de   foyers_Aout 2021.docx ---
+  SOS ENERGIE TOGO
+  ACCESSIBLE ENERGY ET TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/TESTS_CATHY 2021/TestAout2021/-Résultats de tests de  foyers Toyola_Aout 2021.docx ---
+  SOS ENERGIE TOGO
+  ACCESSIBLE ENERGY ET TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/TESTS_CATHY 2021/TestAout2021/Results_WBT tests_Toyola Stoves_August 2021.docx ---
+  SOS ENERGIE TOGO
+  THE CARBON FINANCE PROJECT IN TOGO
+  BY ACCESSIBLE ENERGY AND TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Test Ghana Octobre 2023/-Résultats de tests de   foyers_Ghana_MAN_WM.docx ---
+  SOS ENERGIE TOGO
+  ACCESSIBLE ENERGY ET TOYOLA ENERGY LIMITED
+
+--- data/raw/Tests_Foyers_unzipped/Tests_Foyers/Tests_Cathy_2019-2020/Fiches Excels Test_2020/Test_Août_2020_TOYOLA/~$ésultats de tests de   foyers_Aout 2020.docx (extract failed) ---

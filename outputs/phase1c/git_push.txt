@@ -1,0 +1,6 @@
+
+(gnome-ssh-askpass:51777): Gtk-WARNING **: 09:15:43.941: cannot open display: 
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+
+(gnome-ssh-askpass:61059): Gtk-WARNING **: 09:16:23.581: cannot open display: 
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'

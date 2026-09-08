@@ -1,0 +1,9 @@
+=== STAGED CHANGES (file count) ===
+ preprocess_wbt.py                                  |  727 ++++
+ regenerate_figures.py                              |  748 ++++
+ 101 files changed, 12343 insertions(+), 5 deletions(-)
+
+=== UNTRACKED REMAINING ===
+?? _git_deploy.sh
+
+=== DONE ===
